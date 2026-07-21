@@ -1,5 +1,5 @@
 {
-  "_comment": "Refreshable logo manifest for Tellius decks. Resolves each brand's official logo from Wikidata (property P154 'logo image') via a search term, then downloads from Wikimedia Commons. 'commons' overrides with an explicit Commons filename; 'url' with a direct download; 'local' copies an existing file (path relative to this dir). Re-run refresh_logos.py to pull the latest. Naming: <category>-logo-<Name>.<ext>. Categories: datasource (warehouses/DBs/storage/connectors + syndicated data providers), bi (BI/semantic/catalog tools), cloud (cloud platforms), comms (messaging/destinations), customer.",
+  "_comment": "Refreshable logo manifest for decks. Resolves each brand's official logo from Wikidata (property P154 'logo image') via a search term, then downloads from Wikimedia Commons. 'commons' overrides with an explicit Commons filename; 'url' with a direct download; 'local' copies an existing file (path relative to this dir). Re-run refresh_logos.py to pull the latest. Naming: <category>-logo-<Name>.<ext>. Categories: datasource (warehouses/DBs/storage/connectors + syndicated data providers), bi (BI/semantic/catalog tools), cloud (cloud platforms), comms (messaging/destinations), customer.",
   "brands": [
     {
       "out": "datasource-logo-Snowflake",
