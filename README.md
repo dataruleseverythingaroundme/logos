@@ -1,6 +1,6 @@
 # logos
 
-Refreshable brand-logo assets for Tellius decks (connectors, cloud, BI, comms, customers).
+Refreshable brand-logo assets for decks (connectors, cloud, BI, comms, customers).
 Served over jsDelivr CDN — hotlinks reliably in-browser and in Print→PDF.
 
 ## Usage
