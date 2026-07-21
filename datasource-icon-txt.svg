@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="26px" viewBox="0 0 19 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fileicon Copy 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7,2 L22,2 C23.1045695,2 24,2.8954305 24,4 L24,20.0425618 L16.0107422,28 L7,28 C5.8954305,28 5,27.1045695 5,26 L5,4 C5,2.8954305 5.8954305,2 7,2 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-page" transform="translate(-337.000000, -33.000000)">
+            <g id="Fileicon" transform="translate(332.000000, 31.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="Color/fill/Dark_Gray2" mask="url(#mask-2)" fill="#ACB9BF" fill-rule="evenodd">
+                    <rect id="Rectangle" x="0" y="0" width="30" height="30"></rect>
+                </g>
+                <path d="M23.9981689,20 L16,27.9875081 L16,21 C16,20.4477153 16.4477153,20 17,20 L23.9981689,20 Z" id="Path-2" fill="#8E989E" fill-rule="evenodd" mask="url(#mask-2)"></path>
+                <g id="Typography/Icon_text" mask="url(#mask-2)" font-family="Roboto-Bold, Roboto" font-size="7" font-weight="bold" line-spacing="14">
+                    <g transform="translate(5.000000, 7.000000)" id="Heading_6">
+                        <text>
+                            <tspan x="5.27539062" y="6" fill="#FFFFFF">txt</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
