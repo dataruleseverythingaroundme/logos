@@ -192,6 +192,12 @@
       "search": "QuickBooks"
     },
     {
+      "out": "datasource-logo-Notion",
+      "category": "datasource",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/notion.png",
+      "note": "Curated Notion logomark (N box). Sourced from Tellius HubSpot file library."
+    },
+    {
       "out": "bi-logo-Tableau",
       "category": "bi",
       "search": "Tableau Software"
@@ -220,6 +226,18 @@
       "out": "bi-logo-ThoughtSpot",
       "category": "bi",
       "commons": "ThoughtSpot logo 2019.png"
+    },
+    {
+      "out": "bi-logo-dbt",
+      "category": "bi",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/dbt-icon-2yxlz1fvy25mvn5scgnlw.webp",
+      "note": "Curated dbt logomark (orange X). Sourced from Tellius HubSpot file library; converted webp->png for deck/Print->PDF reliability."
+    },
+    {
+      "out": "bi-logo-AtScale",
+      "category": "bi",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/Atscale.webp",
+      "note": "Curated AtScale logomark (mountain). Sourced from Tellius HubSpot file library; converted webp->png. Opaque white background as sourced."
     },
     {
       "out": "cloud-logo-AWS",
@@ -348,10 +366,6 @@
     {
       "out": "datasource-logo-Numerator",
       "note": "Numerator — no Wikidata entity; source from numerator.com brand assets."
-    },
-    {
-      "out": "bi-logo-dbt",
-      "note": "dbt Labs — not on Commons; source SVG from getdbt.com brand/press."
     }
   ],
   "mirror_dirs": [
