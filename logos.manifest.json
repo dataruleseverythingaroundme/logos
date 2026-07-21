@@ -1,5 +1,5 @@
 {
-  "_comment": "Refreshable logo manifest for decks. Resolves each brand's official logo from Wikidata (property P154 'logo image') via a search term, then downloads from Wikimedia Commons. 'commons' overrides with an explicit Commons filename; 'url' with a direct download; 'local' copies an existing file (path relative to this dir). Re-run refresh_logos.py to pull the latest. Naming: <category>-<type>-<Name>.<ext>, where type defaults to 'logo' (product connector UI icons use 'icon'). Categories: datasource (warehouses/DBs/storage/connectors + syndicated data providers), bi (BI/semantic/catalog tools), cloud (cloud platforms), comms (messaging/destinations), customer, output, brand (first-party Tellius/Kaiya marks; 'self: true', committed directly with no external refresh source).",
+  "_comment": "Refreshable logo manifest for decks. Resolves each brand's official logo from Wikidata (property P154 'logo image') via a search term, then downloads from Wikimedia Commons. 'commons' overrides with an explicit Commons filename; 'url' with a direct download; 'local' copies an existing file (path relative to this dir). Re-run refresh_logos.py to pull the latest. Naming: <category>-<type>-<Name>.<ext>, where type defaults to 'logo' (product connector UI icons use 'icon'). Categories: datasource (warehouses/DBs/storage/connectors + syndicated data providers), bi (BI/semantic/catalog tools), cloud (cloud platforms), comms (messaging/destinations), aitool (AI app builders / agentic coding tools; may double as competitive landscape), customer, output, brand (first-party Tellius/Kaiya marks; 'self: true', committed directly with no external refresh source).",
   "brands": [
     {
       "out": "datasource-logo-Snowflake",
@@ -10,6 +10,13 @@
       "out": "datasource-logo-Databricks",
       "category": "datasource",
       "search": "Databricks"
+    },
+    {
+      "out": "datasource-icon-databricks",
+      "category": "datasource",
+      "type": "icon",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/Databricks-Emblem.png",
+      "note": "Databricks emblem/icon mark (red stacked squares), distinct from the full datasource-logo-Databricks. Trimmed from a 3840x2160 canvas to tight bounds."
     },
     {
       "out": "datasource-logo-BigQuery",
@@ -262,6 +269,22 @@
       "search": "Microsoft PowerPoint"
     },
     {
+      "out": "aitool-logo-Lovable",
+      "category": "aitool",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/Lovable.svg"
+    },
+    {
+      "out": "aitool-logo-Replit",
+      "category": "aitool",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/replit.png"
+    },
+    {
+      "out": "aitool-logo-Bolt",
+      "category": "aitool",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/Bolt%20icon.png",
+      "note": "Bolt (bolt.new) icon mark."
+    },
+    {
       "out": "customer-logo-NovoNordisk",
       "category": "customer",
       "local": "../Novo_Nordisk_-_Logo.svg"
@@ -285,6 +308,17 @@
       "out": "customer-logo-eBay",
       "category": "customer",
       "search": "eBay"
+    },
+    {
+      "out": "customer-logo-PG",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/pg.svg",
+      "note": "Procter & Gamble roundel."
+    },
+    {
+      "out": "customer-logo-Braeburn",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/braeburn.svg"
     },
     {
       "out": "brand-logo-Tellius-T-purple",
