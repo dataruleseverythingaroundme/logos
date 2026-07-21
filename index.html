@@ -45,14 +45,41 @@
   .badge{position:absolute;top:8px;right:8px;font-size:9px;letter-spacing:.03em;
     text-transform:uppercase;padding:2px 6px;border-radius:6px;background:var(--chip);color:var(--muted)}
   .badge.curated{background:var(--accent);color:var(--accent-ink)}
-  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
-    background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:11px;font-size:14px;
-    opacity:0;pointer-events:none;transition:.18s;box-shadow:var(--shadow);max-width:86vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
   .more{grid-column:1/-1;text-align:center;padding:18px}
   .more button{padding:11px 20px;border:1px solid var(--line);border-radius:11px;
     background:var(--card);color:var(--ink);cursor:pointer;font-size:14px}
   .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:50px 0}
+  /* detail modal */
+  .overlay{position:fixed;inset:0;background:rgba(10,9,18,.55);display:none;
+    align-items:center;justify-content:center;padding:20px;z-index:20}
+  .overlay.show{display:flex}
+  .modal{background:var(--card);border:1px solid var(--line);border-radius:18px;
+    width:min(520px,100%);padding:22px;box-shadow:0 20px 60px rgba(0,0,0,.35);position:relative}
+  .modal .x{position:absolute;top:12px;right:14px;border:none;background:none;
+    color:var(--muted);font-size:22px;line-height:1;cursor:pointer}
+  .m-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+  .m-thumb{width:72px;height:72px;flex:none;display:flex;align-items:center;justify-content:center;
+    background:var(--bg);border:1px solid var(--line);border-radius:12px}
+  .m-thumb img{max-width:60px;max-height:60px;object-fit:contain}
+  .m-title{font-size:17px;font-weight:600;word-break:break-word}
+  .m-sub{color:var(--muted);font-size:12px;margin-top:2px}
+  .m-label{font-size:12px;color:var(--muted);margin:14px 0 6px}
+  .m-vars{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px}
+  .vchip{padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--bg);
+    color:var(--ink);cursor:pointer;font-size:12px;user-select:none}
+  .vchip[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .urlrow{display:flex;gap:8px}
+  .urlrow input{flex:1;min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:11px;
+    background:var(--bg);color:var(--ink);font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .btn{padding:11px 16px;border:1px solid var(--accent);border-radius:11px;background:var(--accent);
+    color:var(--accent-ink);cursor:pointer;font-size:14px;font-weight:600;white-space:nowrap}
+  .btn.ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+  .m-actions{display:flex;gap:8px;margin-top:12px;align-items:center;flex-wrap:wrap}
+  .m-actions a{color:var(--accent);text-decoration:none;font-size:13px}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+    background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:11px;font-size:14px;
+    opacity:0;pointer-events:none;transition:.18s;box-shadow:var(--shadow);z-index:30}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
@@ -71,6 +98,25 @@
 </header>
 <div class="count" id="count"></div>
 <div class="grid" id="grid"></div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="x" id="mClose" aria-label="Close">×</button>
+    <div class="m-head">
+      <div class="m-thumb"><img id="mImg" alt=""></div>
+      <div><div class="m-title" id="mTitle"></div><div class="m-sub" id="mSub"></div></div>
+    </div>
+    <div id="mVarsWrap" style="display:none"><div class="m-label">Variant</div><div class="m-vars" id="mVars"></div></div>
+    <div class="m-label">Link — select-all &amp; copy is ready, or hit Copy</div>
+    <div class="urlrow">
+      <input id="mUrl" readonly spellcheck="false">
+      <button class="btn" id="mCopy">Copy</button>
+    </div>
+    <div class="m-actions">
+      <a id="mOpen" target="_blank" rel="noopener">Open image ↗</a>
+    </div>
+  </div>
+</div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -82,27 +128,24 @@ const SKIP = new Set(["mirror.manifest.json","logos.manifest.json"]);
 const PAGE = 300;
 
 let all = [], filtered = [], shown = 0, source = "all", term = "";
-const grid = document.getElementById("grid");
-const countEl = document.getElementById("count");
-const toast = document.getElementById("toast");
+const $ = id => document.getElementById(id);
+const grid = $("grid"), countEl = $("count"), toast = $("toast"), overlay = $("overlay");
 
 async function load(){
   const [pkg, mirror] = await Promise.all([
     fetch(PKG).then(r=>r.json()).catch(()=>({files:[]})),
     fetch(MIRROR).then(r=>r.json()).catch(()=>({mirror:[]}))
   ]);
-  // curated = real image files committed in the repo
   const curated = (pkg.files||[])
     .filter(f=>f.type==="file" && IMG.test(f.name) && !SKIP.has(f.name))
-    .map(f=>({name:f.name.replace(IMG,""), source:"curated", url:REPO+"/"+f.name, variants:null}));
+    .map(f=>({name:f.name.replace(IMG,""), source:"curated", url:REPO+"/"+f.name, variants:null, files:null}));
   const curatedNames = new Set(curated.map(c=>c.name.toLowerCase()));
-  // mirror = reference-only, drop any that duplicate a curated brand slug
   const mir = (mirror.mirror||[])
     .filter(e=>!curatedNames.has(e.name.toLowerCase()))
-    .map(e=>({name:e.name, source:e.source, url:e.url, variants:e.variants||null}));
+    .map(e=>({name:e.name, source:e.source, url:e.url, variants:e.variants||null, files:e.files||null}));
   all = curated.concat(mir);
-  document.getElementById("sub").textContent =
-    all.length.toLocaleString()+" logos · "+curated.length+" curated · "+mir.length.toLocaleString()+" mirrored (theSVG + gilbarbara). Click any logo to copy its link.";
+  $("sub").textContent =
+    all.length.toLocaleString()+" logos · "+curated.length+" curated · "+mir.length.toLocaleString()+" mirrored (theSVG + gilbarbara). Click a logo to grab its link.";
   apply();
 }
 
@@ -121,7 +164,8 @@ function apply(){
 function render(){
   const slice = filtered.slice(shown, shown+PAGE);
   const frag = document.createDocumentFragment();
-  for(const e of slice){
+  slice.forEach((e,i)=>{
+    const idx = shown+i;
     const card = document.createElement("div");
     card.className = "card";
     const badge = e.source==="curated" ? "curated" : (e.source==="thesvg"?"theSVG":"gilbarbara");
@@ -130,9 +174,9 @@ function render(){
       '<div class="thumb"><img loading="lazy" alt="" src="'+e.url+'"></div>'+
       '<div class="name">'+e.name+'</div>';
     card.querySelector("img").onerror = ()=>card.classList.add("broken");
-    card.onclick = ()=>copy(e);
+    card.onclick = ()=>openDetail(e);
     frag.appendChild(card);
-  }
+  });
   grid.appendChild(frag);
   shown += slice.length;
   const old = grid.querySelector(".more"); if(old) old.remove();
@@ -146,23 +190,67 @@ function render(){
   countEl.textContent = "Showing "+shown.toLocaleString()+" of "+filtered.length.toLocaleString();
 }
 
-function copy(e){
-  navigator.clipboard.writeText(e.url).then(()=>{
-    let msg = "Copied: "+e.url;
-    if(e.variants && e.variants.length>1) msg += "  (variants: "+e.variants.join(", ")+")";
-    toast.textContent = msg; toast.classList.add("show");
-    clearTimeout(copy._t); copy._t = setTimeout(()=>toast.classList.remove("show"), 2600);
-  });
+// swap the last path segment to point at a chosen variant/file
+function variantUrl(e, token){
+  if(e.source==="thesvg") return e.url.replace(/[^/]+\.svg$/, token+".svg");
+  if(e.source==="gilbarbara") return e.url.replace(/[^/]+$/, token);
+  return e.url;
 }
 
+function setUrl(url){
+  const i = $("mUrl");
+  i.value = url; $("mOpen").href = url; $("mImg").src = url;
+  i.focus(); i.select();
+}
+
+function openDetail(e){
+  $("mTitle").textContent = e.name;
+  $("mSub").textContent = e.source==="curated" ? "Curated in this repo" :
+    (e.source==="thesvg"?"Mirrored from theSVG":"Mirrored from gilbarbara");
+  // variant chips
+  const tokens = e.source==="thesvg" ? (e.variants||[]) : (e.source==="gilbarbara" ? (e.files||[]) : []);
+  const wrap = $("mVarsWrap"), box = $("mVars");
+  box.innerHTML = "";
+  if(tokens.length > 1){
+    wrap.style.display = "block";
+    tokens.forEach(tok=>{
+      const label = e.source==="gilbarbara" ? tok.replace(IMG,"") : tok;
+      const c = document.createElement("span");
+      c.className = "vchip"; c.textContent = label;
+      const url = variantUrl(e, tok);
+      c.setAttribute("aria-pressed", url===e.url);
+      c.onclick = ()=>{ [...box.children].forEach(x=>x.setAttribute("aria-pressed", x===c)); setUrl(url); };
+      box.appendChild(c);
+    });
+  } else { wrap.style.display = "none"; }
+  overlay.classList.add("show");
+  setUrl(e.url);            // preselected & ready for Cmd/Ctrl+C
+  copyText(e.url, true);    // also copy immediately as a convenience
+}
+
+function copyText(text, silent){
+  const done = ()=>{ if(!silent) showToast("Copied to clipboard"); };
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallback());
+  } else fallback();
+  function fallback(){ const i=$("mUrl"); i.focus(); i.select();
+    try{ document.execCommand("copy"); done(); }catch(_){ if(!silent) showToast("Press Cmd/Ctrl+C to copy"); } }
+}
+function showToast(msg){ toast.textContent=msg; toast.classList.add("show");
+  clearTimeout(showToast._t); showToast._t=setTimeout(()=>toast.classList.remove("show"),2000); }
+function closeModal(){ overlay.classList.remove("show"); }
+
+$("mCopy").onclick = ()=>copyText($("mUrl").value, false);
+$("mClose").onclick = closeModal;
+overlay.onclick = ev=>{ if(ev.target===overlay) closeModal(); };
+document.addEventListener("keydown", ev=>{ if(ev.key==="Escape") closeModal(); });
+
 let deb;
-document.getElementById("q").addEventListener("input", ev=>{
-  clearTimeout(deb); deb = setTimeout(()=>{ term = ev.target.value; apply(); }, 140);
-});
-document.getElementById("chips").addEventListener("click", ev=>{
+$("q").addEventListener("input", ev=>{ clearTimeout(deb); deb=setTimeout(()=>{ term=ev.target.value; apply(); },140); });
+$("chips").addEventListener("click", ev=>{
   const c = ev.target.closest(".chip"); if(!c) return;
   source = c.dataset.src;
-  [...document.querySelectorAll(".chip")].forEach(x=>x.setAttribute("aria-pressed", x===c));
+  [...document.querySelectorAll("#chips .chip")].forEach(x=>x.setAttribute("aria-pressed", x===c));
   apply();
 });
 load();
