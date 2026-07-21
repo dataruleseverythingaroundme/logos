@@ -287,6 +287,46 @@
       "search": "eBay"
     },
     {
+      "out": "customer-logo-Novartis",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/novartis.svg"
+    },
+    {
+      "out": "customer-logo-AbbVie",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/abbvie.svg"
+    },
+    {
+      "out": "customer-logo-Biogen",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/biogen.svg"
+    },
+    {
+      "out": "customer-logo-Genentech",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/genentech.svg"
+    },
+    {
+      "out": "customer-logo-Agios",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/agios.svg"
+    },
+    {
+      "out": "customer-logo-Coherus",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/coherus.svg"
+    },
+    {
+      "out": "customer-logo-Axsome",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/axsome.svg"
+    },
+    {
+      "out": "customer-logo-CHEST",
+      "category": "customer",
+      "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/chest.svg"
+    },
+    {
       "out": "brand-logo-Tellius-T-purple",
       "category": "brand",
       "self": true,
