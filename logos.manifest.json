@@ -1,410 +1,409 @@
 {
-  "_comment": "Refreshable logo manifest for decks. Resolves each brand's official logo from Wikidata (property P154 'logo image') via a search term, then downloads from Wikimedia Commons. 'commons' overrides with an explicit Commons filename; 'url' with a direct download; 'local' copies an existing file (path relative to this dir). Re-run refresh_logos.py to pull the latest. Naming: <category>-<type>-<Name>.<ext>, where type defaults to 'logo' (product connector UI icons use 'icon'). Categories: datasource (warehouses/DBs/storage/connectors + syndicated data providers), bi (BI/semantic/catalog tools), cloud (cloud platforms), comms (messaging/destinations), customer, output, brand (first-party Tellius/Kaiya marks; 'self: true', committed directly with no external refresh source).",
+  "_comment": "Refreshable logo manifest for decks. Resolves each brand's official logo from Wikidata (property P154 'logo image') via a search term, then downloads from Wikimedia Commons. 'commons' overrides with an explicit Commons filename; 'url' with a direct download; 'local' copies an existing file (path relative to this dir). Re-run refresh_logos.py to pull the latest. Naming: <type>-<category>-<Name>.<ext>, where type is 'logo' (default) or 'icon' (product connector UI icons). Categories: data (warehouses/DBs/storage/connectors + syndicated data providers), bi (BI/semantic/catalog tools), cloud (cloud platforms), comms (messaging/destinations), firm (customers), output, ai (first-party Tellius corporate marks) and Tellius (first-party product marks e.g. Kaiya); first-party marks use 'self: true', committed directly with no external refresh source.",
   "brands": [
     {
-      "out": "datasource-logo-Snowflake",
-      "category": "datasource",
+      "out": "logo-data-Snowflake",
+      "category": "data",
       "search": "Snowflake Inc"
     },
     {
-      "out": "datasource-logo-Databricks",
-      "category": "datasource",
+      "out": "logo-data-Databricks",
+      "category": "data",
       "search": "Databricks"
     },
     {
-      "out": "datasource-logo-BigQuery",
-      "category": "datasource",
+      "out": "logo-data-BigQuery",
+      "category": "data",
       "local": "../datasource-logo-Bigquery.svg"
     },
     {
-      "out": "datasource-logo-Redshift",
-      "category": "datasource",
+      "out": "logo-data-Redshift",
+      "category": "data",
       "local": "../datasource-logo-redshift.png"
     },
     {
-      "out": "datasource-logo-MySQL",
-      "category": "datasource",
+      "out": "logo-data-MySQL",
+      "category": "data",
       "search": "MySQL"
     },
     {
-      "out": "datasource-logo-PostgreSQL",
-      "category": "datasource",
+      "out": "logo-data-PostgreSQL",
+      "category": "data",
       "search": "PostgreSQL"
     },
     {
-      "out": "datasource-logo-MicrosoftSQLServer",
-      "category": "datasource",
+      "out": "logo-data-MicrosoftSQLServer",
+      "category": "data",
       "commons": "Microsoft SQL Server 2025 icon.svg"
     },
     {
-      "out": "datasource-logo-Oracle",
-      "category": "datasource",
+      "out": "logo-data-Oracle",
+      "category": "data",
       "search": "Oracle Corporation"
     },
     {
-      "out": "datasource-logo-Teradata",
-      "category": "datasource",
+      "out": "logo-data-Teradata",
+      "category": "data",
       "search": "Teradata"
     },
     {
-      "out": "datasource-logo-MongoDB",
-      "category": "datasource",
+      "out": "logo-data-MongoDB",
+      "category": "data",
       "search": "MongoDB"
     },
     {
-      "out": "datasource-logo-Cassandra",
-      "category": "datasource",
+      "out": "logo-data-Cassandra",
+      "category": "data",
       "search": "Apache Cassandra"
     },
     {
-      "out": "datasource-logo-Elasticsearch",
-      "category": "datasource",
+      "out": "logo-data-Elasticsearch",
+      "category": "data",
       "search": "Elasticsearch"
     },
     {
-      "out": "datasource-logo-ApacheHive",
-      "category": "datasource",
+      "out": "logo-data-ApacheHive",
+      "category": "data",
       "search": "Apache Hive"
     },
     {
-      "out": "datasource-logo-ApacheSpark",
-      "category": "datasource",
+      "out": "logo-data-ApacheSpark",
+      "category": "data",
       "search": "Apache Spark"
     },
     {
-      "out": "datasource-logo-ApacheHadoop",
-      "category": "datasource",
+      "out": "logo-data-ApacheHadoop",
+      "category": "data",
       "search": "Apache Hadoop"
     },
     {
-      "out": "datasource-logo-Salesforce",
-      "category": "datasource",
+      "out": "logo-data-Salesforce",
+      "category": "data",
       "search": "Salesforce"
     },
     {
-      "out": "datasource-logo-GoogleAnalytics",
-      "category": "datasource",
+      "out": "logo-data-GoogleAnalytics",
+      "category": "data",
       "search": "Google Analytics"
     },
     {
-      "out": "datasource-logo-MicrosoftExcel",
-      "category": "datasource",
+      "out": "logo-data-MicrosoftExcel",
+      "category": "data",
       "search": "Microsoft Excel"
     },
     {
-      "out": "datasource-logo-GoogleDrive",
-      "category": "datasource",
+      "out": "logo-data-GoogleDrive",
+      "category": "data",
       "search": "Google Drive"
     },
     {
-      "out": "datasource-logo-Gong",
-      "category": "datasource",
+      "out": "logo-data-Gong",
+      "category": "data",
       "local": "../datasource-logo-gong.png"
     },
     {
-      "out": "datasource-logo-HubSpot",
-      "category": "datasource",
+      "out": "logo-data-HubSpot",
+      "category": "data",
       "search": "HubSpot"
     },
     {
-      "out": "datasource-logo-IQVIA",
-      "category": "datasource",
+      "out": "logo-data-IQVIA",
+      "category": "data",
       "search": "IQVIA"
     },
     {
-      "out": "datasource-logo-Veeva",
-      "category": "datasource",
+      "out": "logo-data-Veeva",
+      "category": "data",
       "search": "Veeva Systems"
     },
     {
-      "out": "datasource-logo-Clarivate",
-      "category": "datasource",
+      "out": "logo-data-Clarivate",
+      "category": "data",
       "search": "Clarivate"
     },
     {
-      "out": "datasource-logo-MMIT",
-      "category": "datasource",
+      "out": "logo-data-MMIT",
+      "category": "data",
       "local": "../datasource-logo-MMIT.png"
     },
     {
-      "out": "datasource-logo-IntegriChain",
-      "category": "datasource",
+      "out": "logo-data-IntegriChain",
+      "category": "data",
       "local": "../datasource-logo-integrichain.svg"
     },
     {
-      "out": "datasource-logo-Optum",
-      "category": "datasource",
+      "out": "logo-data-Optum",
+      "category": "data",
       "search": "Optum"
     },
     {
-      "out": "datasource-logo-Datavant",
-      "category": "datasource",
+      "out": "logo-data-Datavant",
+      "category": "data",
       "commons": "Ciox Datavant Logo(R) COLOR-01.png"
     },
     {
-      "out": "datasource-logo-NielsenIQ",
-      "category": "datasource",
+      "out": "logo-data-NielsenIQ",
+      "category": "data",
       "search": "NielsenIQ"
     },
     {
-      "out": "datasource-logo-Walmart",
-      "category": "datasource",
+      "out": "logo-data-Walmart",
+      "category": "data",
       "search": "Walmart"
     },
     {
-      "out": "datasource-logo-Amazon",
-      "category": "datasource",
+      "out": "logo-data-Amazon",
+      "category": "data",
       "commons": "Amazon logo.svg"
     },
     {
-      "out": "datasource-logo-Instacart",
-      "category": "datasource",
+      "out": "logo-data-Instacart",
+      "category": "data",
       "search": "Instacart"
     },
     {
-      "out": "datasource-logo-SAP",
-      "category": "datasource",
+      "out": "logo-data-SAP",
+      "category": "data",
       "search": "SAP SE"
     },
     {
-      "out": "datasource-logo-Anaplan",
-      "category": "datasource",
+      "out": "logo-data-Anaplan",
+      "category": "data",
       "search": "Anaplan"
     },
     {
-      "out": "datasource-logo-Workday",
-      "category": "datasource",
+      "out": "logo-data-Workday",
+      "category": "data",
       "search": "Workday Inc"
     },
     {
-      "out": "datasource-logo-NetSuite",
-      "category": "datasource",
+      "out": "logo-data-NetSuite",
+      "category": "data",
       "local": "../datasource-logo-NetSuite-logo-mobius.svg"
     },
     {
-      "out": "datasource-logo-MicrosoftDynamics",
-      "category": "datasource",
+      "out": "logo-data-MicrosoftDynamics",
+      "category": "data",
       "commons": "Microsoft Dynamics 365 Logo (2021–present).svg"
     },
     {
-      "out": "datasource-logo-QuickBooks",
-      "category": "datasource",
+      "out": "logo-data-QuickBooks",
+      "category": "data",
       "search": "QuickBooks"
     },
     {
-      "out": "datasource-logo-Notion",
-      "category": "datasource",
+      "out": "logo-data-Notion",
+      "category": "data",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/notion.png",
       "note": "Curated Notion logomark (N box). Sourced from Tellius HubSpot file library."
     },
     {
-      "out": "bi-logo-Tableau",
+      "out": "logo-bi-Tableau",
       "category": "bi",
       "search": "Tableau Software"
     },
     {
-      "out": "bi-logo-PowerBI",
+      "out": "logo-bi-PowerBI",
       "category": "bi",
       "search": "Power BI"
     },
     {
-      "out": "bi-logo-Looker",
+      "out": "logo-bi-Looker",
       "category": "bi",
       "commons": "Looker.svg"
     },
     {
-      "out": "bi-logo-Qlik",
+      "out": "logo-bi-Qlik",
       "category": "bi",
       "search": "Qlik"
     },
     {
-      "out": "bi-logo-MicroStrategy",
+      "out": "logo-bi-MicroStrategy",
       "category": "bi",
       "search": "MicroStrategy"
     },
     {
-      "out": "bi-logo-ThoughtSpot",
+      "out": "logo-bi-ThoughtSpot",
       "category": "bi",
       "commons": "ThoughtSpot logo 2019.png"
     },
     {
-      "out": "bi-logo-dbt",
+      "out": "logo-bi-dbt",
       "category": "bi",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/dbt-icon-2yxlz1fvy25mvn5scgnlw.webp",
       "note": "Curated dbt logomark (orange X). Sourced from Tellius HubSpot file library; converted webp->png for deck/Print->PDF reliability."
     },
     {
-      "out": "bi-logo-AtScale",
+      "out": "logo-bi-AtScale",
       "category": "bi",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/Atscale.webp",
       "note": "Curated AtScale logomark (mountain). Sourced from Tellius HubSpot file library; converted webp->png. Opaque white background as sourced."
     },
     {
-      "out": "cloud-logo-AWS",
+      "out": "logo-cloud-AWS",
       "category": "cloud",
       "search": "Amazon Web Services"
     },
     {
-      "out": "cloud-logo-Azure",
+      "out": "logo-cloud-Azure",
       "category": "cloud",
       "search": "Microsoft Azure"
     },
     {
-      "out": "cloud-logo-GoogleCloud",
+      "out": "logo-cloud-GoogleCloud",
       "category": "cloud",
       "search": "Google Cloud Platform"
     },
     {
-      "out": "comms-logo-Slack",
+      "out": "logo-comms-Slack",
       "category": "comms",
       "search": "Slack Technologies"
     },
     {
-      "out": "comms-logo-MicrosoftTeams",
+      "out": "logo-comms-MicrosoftTeams",
       "category": "comms",
       "search": "Microsoft Teams"
     },
     {
-      "out": "comms-logo-MicrosoftOutlook",
+      "out": "logo-comms-MicrosoftOutlook",
       "category": "comms",
       "search": "Microsoft Outlook"
     },
     {
-      "out": "comms-logo-Gmail",
+      "out": "logo-comms-Gmail",
       "category": "comms",
       "search": "Gmail"
     },
     {
-      "out": "output-logo-PowerPoint",
-      "category": "comms",
+      "out": "logo-output-PowerPoint",
+      "category": "output",
       "search": "Microsoft PowerPoint"
     },
     {
-      "out": "customer-logo-NovoNordisk",
-      "category": "customer",
+      "out": "logo-firm-NovoNordisk",
+      "category": "firm",
       "local": "../Novo_Nordisk_-_Logo.svg"
     },
     {
-      "out": "customer-logo-Bayer",
-      "category": "customer",
+      "out": "logo-firm-Bayer",
+      "category": "firm",
       "search": "Bayer"
     },
     {
-      "out": "customer-logo-Regeneron",
-      "category": "customer",
+      "out": "logo-firm-Regeneron",
+      "category": "firm",
       "search": "Regeneron Pharmaceuticals"
     },
     {
-      "out": "customer-logo-PepsiCo",
-      "category": "customer",
+      "out": "logo-firm-PepsiCo",
+      "category": "firm",
       "search": "PepsiCo"
     },
     {
-      "out": "customer-logo-eBay",
-      "category": "customer",
+      "out": "logo-firm-eBay",
+      "category": "firm",
       "search": "eBay"
     },
     {
-      "out": "customer-logo-Novartis",
-      "category": "customer",
+      "out": "logo-firm-Novartis",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/novartis.svg"
     },
     {
-      "out": "customer-logo-AbbVie",
-      "category": "customer",
+      "out": "logo-firm-AbbVie",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/abbvie.svg"
     },
     {
-      "out": "customer-logo-Biogen",
-      "category": "customer",
+      "out": "logo-firm-Biogen",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/biogen.svg"
     },
     {
-      "out": "customer-logo-Genentech",
-      "category": "customer",
+      "out": "logo-firm-Genentech",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/genentech.svg"
     },
     {
-      "out": "customer-logo-Agios",
-      "category": "customer",
+      "out": "logo-firm-Agios",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/agios.svg"
     },
     {
-      "out": "customer-logo-Coherus",
-      "category": "customer",
+      "out": "logo-firm-Coherus",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/coherus.svg"
     },
     {
-      "out": "customer-logo-Axsome",
-      "category": "customer",
+      "out": "logo-firm-Axsome",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/axsome.svg"
     },
     {
-      "out": "customer-logo-CHEST",
-      "category": "customer",
+      "out": "logo-firm-CHEST",
+      "category": "firm",
       "url": "https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/chest.svg"
     },
     {
-      "out": "brand-logo-Tellius-T-purple",
-      "category": "brand",
+      "out": "logo-ai-Tellius-T_Purple",
+      "category": "ai",
       "self": true,
       "note": "First-party Tellius asset (Kaiya T mark, purple). Committed directly; no external refresh source."
     },
     {
-      "out": "brand-icon-Kaiya-chat",
-      "category": "brand",
-      "type": "icon",
+      "out": "logo-Tellius-Kaiya-chat",
+      "category": "Tellius",
       "self": true,
       "note": "First-party Tellius product icon (Kaiya chat). Committed directly; no external refresh source."
     }
   ],
   "gaps_no_source_yet": [
     {
-      "out": "datasource-logo-Circana",
+      "out": "logo-data-Circana",
       "note": "Circana (IRI+NPD) — no Wikidata P154; Wix site. Source from circana.com press kit or add url/commons to brands[]."
     },
     {
-      "out": "datasource-logo-KomodoHealth",
+      "out": "logo-data-KomodoHealth",
       "note": "Komodo Health — no Wikidata entity. Add url from komodohealth.com brand assets."
     },
     {
-      "out": "datasource-logo-SymphonyHealth",
+      "out": "logo-data-SymphonyHealth",
       "note": "Symphony Health (ICON plc) — source from iconplc.com/symphony brand assets."
     },
     {
-      "out": "datasource-logo-SPINS",
+      "out": "logo-data-SPINS",
       "note": "SPINS — source from spins.com brand kit."
     },
     {
-      "out": "datasource-logo-8451",
+      "out": "logo-data-8451",
       "note": "84.51 (Kroger) — source from 8451.com brand assets."
     },
     {
-      "out": "bi-logo-Atlan",
+      "out": "logo-bi-Atlan",
       "note": "Atlan (catalog) — source from atlan.com press/brand."
     },
     {
-      "out": "bi-logo-Collibra",
+      "out": "logo-bi-Collibra",
       "note": "Collibra (catalog) — source from collibra.com brand assets."
     },
     {
-      "out": "datasource-logo-OneStream",
+      "out": "logo-data-OneStream",
       "note": "OneStream Software — source from onestream.com brand assets."
     },
     {
-      "out": "datasource-logo-Planful",
+      "out": "logo-data-Planful",
       "note": "Planful — source from planful.com brand assets."
     },
     {
-      "out": "datasource-logo-AzureSynapse",
-      "note": "Azure Synapse — no distinct Wikidata/Commons logo; use cloud-logo-Azure or add url from azure.microsoft.com."
+      "out": "logo-data-AzureSynapse",
+      "note": "Azure Synapse — no distinct Wikidata/Commons logo; use logo-cloud-Azure or add url from azure.microsoft.com."
     },
     {
-      "out": "datasource-logo-DefinitiveHealthcare",
+      "out": "logo-data-DefinitiveHealthcare",
       "note": "Definitive Healthcare — no Wikidata P154; source from definitivehc.com brand assets."
     },
     {
-      "out": "datasource-logo-Numerator",
+      "out": "logo-data-Numerator",
       "note": "Numerator — no Wikidata entity; source from numerator.com brand assets."
     }
   ],
@@ -412,7 +411,7 @@
     {
       "label": "product-dataset-icons",
       "src": "/Users/cwalk/claude/tellius-codebase/React_Project/src/assets/imgs/dataset",
-      "prefix": "datasource-icon-",
+      "prefix": "icon-data-",
       "exts": [
         ".svg",
         ".png"
@@ -430,7 +429,7 @@
     {
       "label": "product-data-icons",
       "src": "/Users/cwalk/claude/tellius-codebase/React_Project/src/modules/data/Icons",
-      "prefix": "datasource-icon-",
+      "prefix": "icon-data-",
       "exts": [
         ".svg"
       ]

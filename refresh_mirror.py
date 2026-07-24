@@ -5,8 +5,8 @@ convention. No image bytes are copied; every entry resolves to an upstream
 jsDelivr URL. Re-run any time to track upstream renames/additions.
 
 Convention: mirror entries use category `lib`, type `logo`, and the upstream
-slug verbatim as the Name -> `lib-logo-<slug>`. Curated first-party/deck files
-in this repo always win over a `lib-` mirror entry for the same brand.
+slug verbatim as the Name -> `logo-lib-<slug>`. Curated first-party/deck files
+in this repo always win over a `logo-lib-` mirror entry for the same brand.
 
 Priority on slug collisions: theSVG first (multi-variant, actively maintained),
 then gilbarbara for anything theSVG lacks.
@@ -49,7 +49,7 @@ def thesvg_entries():
             continue
         default = "default" if "default" in variants else variants[0]
         out.append({
-            "name": f"lib-logo-{slug}",
+            "name": f"logo-lib-{slug}",
             "source": "thesvg",
             "slug": slug,
             "url": TS_FILE_URL.format(slug=slug, variant=default),
@@ -68,7 +68,7 @@ def gilbarbara_entries():
             continue
         primary = next((f for f in files if f == f"{slug}.svg"), min(files, key=len))
         out.append({
-            "name": f"lib-logo-{slug}",
+            "name": f"logo-lib-{slug}",
             "source": "gilbarbara",
             "slug": slug,
             "url": GB_FILE_URL.format(file=primary),
@@ -94,7 +94,7 @@ def build():
             "Reference-only mirror of the two public fallback logo libraries, "
             "keyed under this repo's naming convention. NO image bytes are stored "
             "here — every entry's `url` resolves to an upstream jsDelivr file. "
-            "Convention: lib-logo-<upstream-slug>. theSVG wins on slug collisions "
+            "Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions "
             "(multi-variant), gilbarbara fills gaps. Curated files in this repo "
             "always take precedence over a lib- mirror entry for the same brand. "
             "Regenerate with refresh_mirror.py. Variant resolution: theSVG swap "
