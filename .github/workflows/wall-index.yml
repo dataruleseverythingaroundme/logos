@@ -1,0 +1,32 @@
+name: wall-index
+
+# Keeps curated.json in sync with the image files in the repo, so the Logo Wall
+# can never drift from what's actually committed (which is how the Jul 2026
+# rename silently broke every curated thumbnail).
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild curated.json
+        run: python3 build_index.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- curated.json; then
+            echo "curated.json already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add curated.json
+          git commit -m "Logo Wall: refresh curated.json [skip ci]"
+          git push

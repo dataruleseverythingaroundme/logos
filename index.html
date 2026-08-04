@@ -117,10 +117,14 @@
 
 <script>
 const REPO = "https://cdn.jsdelivr.net/gh/dataruleseverythingaroundme/logos@main";
-const PKG  = "https://data.jsdelivr.com/v1/packages/gh/dataruleseverythingaroundme/logos@main";
-const MIRROR = REPO + "/mirror.manifest.json";
+// Curated file list comes from curated.json, committed next to this page and
+// served same-origin. jsDelivr's package-metadata API snapshots a branch and
+// never re-crawls it, so it kept listing pre-rename filenames long after the
+// files moved — every curated thumbnail 404'd. Regenerate with build_index.py.
+const PKG  = "curated.json";
+const MIRROR = "mirror.manifest.json";
 const IMG = /\.(svg|png|gif|jpe?g|webp)$/i;
-const SKIP = new Set(["mirror.manifest.json","logos.manifest.json"]);
+const SKIP = new Set(["mirror.manifest.json","logos.manifest.json","curated.json"]);
 const PAGE = 300;
 
 let all = [], filtered = [], shown = 0, source = "all", term = "";
@@ -133,12 +137,14 @@ async function load(){
     fetch(MIRROR).then(r=>r.json()).catch(()=>({mirror:[]}))
   ]);
   const curated = (pkg.files||[])
-    .filter(f=>f.type==="file" && IMG.test(f.name) && !SKIP.has(f.name))
-    .map(f=>({name:f.name.replace(IMG,""), source:"curated", url:REPO+"/"+f.name, variants:null, files:null}));
+    .filter(f=>IMG.test(f) && !SKIP.has(f))
+    // thumb is same-origin so previews match the repo the moment a file lands;
+    // url is the jsDelivr link people actually paste into decks and HTML.
+    .map(f=>({name:f.replace(IMG,""), source:"curated", url:REPO+"/"+f, thumb:encodeURIComponent(f), variants:null, files:null}));
   const curatedNames = new Set(curated.map(c=>c.name.toLowerCase()));
   const mir = (mirror.mirror||[])
     .filter(e=>!curatedNames.has(e.name.toLowerCase()))
-    .map(e=>({name:e.name, source:e.source, url:e.url, variants:e.variants||null, files:e.files||null}));
+    .map(e=>({name:e.name, source:e.source, url:e.url, thumb:e.url, variants:e.variants||null, files:e.files||null}));
   all = curated.concat(mir);
   $("sub").textContent =
     all.length.toLocaleString()+" logos · "+curated.length+" curated · "+mir.length.toLocaleString()+" mirrored (theSVG + gilbarbara). Click a logo to grab its link.";
@@ -167,7 +173,7 @@ function render(){
     const badge = e.source==="curated" ? "curated" : (e.source==="thesvg"?"theSVG":"gilbarbara");
     card.innerHTML =
       '<span class="badge '+(e.source==="curated"?"curated":"")+'">'+badge+'</span>'+
-      '<div class="thumb"><img loading="lazy" alt="" src="'+e.url+'"></div>'+
+      '<div class="thumb"><img loading="lazy" alt="" src="'+e.thumb+'"></div>'+
       '<div class="name">'+e.name+'</div>';
     card.querySelector("img").onerror = ()=>card.classList.add("broken");
     card.onclick = ()=>openDetail(e);

@@ -13,6 +13,13 @@ First-party marks: Tellius corporate → `ai` (e.g. `logo-ai-Tellius-T_Purple.pn
 
 See `logos.manifest.json` for the source-of-record mapping (Wikidata/Commons refresh).
 
+## Logo Wall (`index.html`)
+Browsable gallery at https://dataruleseverythingaroundme.github.io/logos/ — search, filter, click to copy a link.
+
+It renders the curated grid from `curated.json`, a flat list of the image filenames in this repo. **If you add or rename a logo, run `python3 build_index.py`** so the wall picks it up; the `wall-index` Action also rebuilds it on every push to `main`.
+
+Don't point the wall back at jsDelivr's package-metadata API (`data.jsdelivr.com/v1/packages/...@main`). It snapshots a branch and won't re-crawl on demand, so it kept listing pre-rename filenames for weeks after the files moved and every curated thumbnail 404'd. Per-file CDN URLs are unaffected — only the listing endpoint goes stale.
+
 ## Mirror layer — the long tail (`mirror.manifest.json`)
 `mirror.manifest.json` is a **reference-only** index of the two public fallback libraries below, keyed under this repo's convention. **No image bytes are stored here** — every entry's `url` points at an upstream jsDelivr file. It exists so a lookup ("do we have a Databricks logo?") covers ~6,400 more brands without vendoring them.
 
