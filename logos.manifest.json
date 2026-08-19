@@ -410,6 +410,156 @@
       "category": "data",
       "url": "https://www.komodohealth.com/wp-content/uploads/2026/04/Logo-Light.svg",
       "note": "Komodo Health (komodohealth.com). Light-background logo (dark ink) \u2014 replaces the erroneously-committed white/dark-bg variant that rendered invisible on the wall."
+    },
+    {
+      "out": "logo-bi-Veezoo",
+      "category": "bi",
+      "note": "source: https://www.veezoo.com/apple-icon?f4cf9ebc2aef1f63"
+    },
+    {
+      "out": "logo-bi-Colrows",
+      "category": "bi",
+      "note": "source: google favicon colrows.com sz256"
+    },
+    {
+      "out": "logo-bi-Nao",
+      "category": "bi",
+      "note": "source: https://getnao.io/favicon.ico?favicon.6c8a96c3.ico"
+    },
+    {
+      "out": "logo-bi-Genloop",
+      "category": "bi",
+      "note": "source: https://framerusercontent.com/images/H01fxwXCsVa7kCsnytlSskUIyo.svg"
+    },
+    {
+      "out": "logo-bi-Querio",
+      "category": "bi",
+      "note": "source: https://framerusercontent.com/images/aM7u0sZY04YsukkDAm5P642xM1s.png"
+    },
+    {
+      "out": "logo-bi-Wren",
+      "category": "bi",
+      "note": "source: https://getwren.ai/favicon_io/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-Cube",
+      "category": "bi",
+      "note": "source: https://cube.dev/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-Zenlytic",
+      "category": "bi",
+      "note": "source: https://zenlytic.com/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-Omni",
+      "category": "bi",
+      "note": "source: https://omni.co/favicon.png"
+    },
+    {
+      "out": "logo-bi-Lyzr",
+      "category": "bi",
+      "note": "source: https://lyzr.ai/wp-content/uploads/2024/03/cropped-Lyzr_Logo_1-removebg-icon-180x180.png"
+    },
+    {
+      "out": "logo-bi-Alation",
+      "category": "bi",
+      "note": "source: https://www.alation.com/favicon.ico"
+    },
+    {
+      "out": "logo-bi-InfiniSynapse",
+      "category": "bi",
+      "note": "source: https://infinisynapse.com/logo.png"
+    },
+    {
+      "out": "logo-bi-Powerdrill",
+      "category": "bi",
+      "note": "source: https://powerdrill.ai/favicon.ico?favicon.7f978dc1.ico"
+    },
+    {
+      "out": "logo-bi-AskYourDatabase",
+      "category": "bi",
+      "note": "source: https://www.askyourdatabase.com/favicon.ico"
+    },
+    {
+      "out": "logo-bi-BlazeSQL",
+      "category": "bi",
+      "note": "source: https://blazesql.com/images/favicon/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-ContextFlo",
+      "category": "bi",
+      "note": "source: https://contextflo.com/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-Clarista",
+      "category": "bi",
+      "note": "source: https://www.clarista.io/favicon.svg"
+    },
+    {
+      "out": "logo-bi-MintMCP",
+      "category": "bi",
+      "note": "source: https://mintmcp.com/app-icon-192x192.png"
+    },
+    {
+      "out": "logo-bi-Strac",
+      "category": "bi",
+      "note": "source: https://cdn.prod.website-files.com/61b258bb599d177e751d9288/651178750f26a2f76d8e7963_61d7a"
+    },
+    {
+      "out": "logo-bi-InterWorks",
+      "category": "bi",
+      "note": "source: https://interworks.com/wp-content/uploads/2026/08/cropped-favicon-180x180.jpg"
+    },
+    {
+      "out": "logo-data-CData",
+      "category": "data",
+      "note": "source: google favicon cdata.com sz256"
+    },
+    {
+      "out": "logo-bi-Skopx",
+      "category": "bi",
+      "note": "source: https://skopx.com/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-Vanna",
+      "category": "bi",
+      "note": "source: https://vanna.ai/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-RelationalAI",
+      "category": "bi",
+      "note": "source: https://cdn.prod.website-files.com/68c66131e7dc76329c719913/690477f94df90de2ed733246_rel-w"
+    },
+    {
+      "out": "logo-bi-Timbr",
+      "category": "bi",
+      "note": "source: https://timbr.ai/wp-content/uploads/2025/08/timbr-logo-from-small-n.png"
+    },
+    {
+      "out": "logo-bi-Honeydew",
+      "category": "bi",
+      "note": "source: https://honeydew.ai/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-Stardog",
+      "category": "bi",
+      "note": "source: https://stardog.com/img/apple-touch-icon.png"
+    },
+    {
+      "out": "logo-bi-DataWorld",
+      "category": "bi",
+      "note": "source: https://data.world/mstatic/assets/favicons/android-chrome-192x192.png"
+    },
+    {
+      "out": "logo-bi-Secoda",
+      "category": "bi",
+      "note": "source: https://cdn.prod.website-files.com/61ddd0b42c51f86c96e1e90e/66db031b916ab10345c6efc5_secod"
+    },
+    {
+      "out": "logo-bi-Promethium",
+      "category": "bi",
+      "note": "source: https://promethium.ai/wp-content/themes/promethium/assets/images/src/favicon.png"
     }
   ],
   "gaps_no_source_yet": [
