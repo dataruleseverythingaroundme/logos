@@ -12,16 +12,6 @@
       "search": "Databricks"
     },
     {
-      "out": "logo-data-BigQuery",
-      "category": "data",
-      "local": "../datasource-logo-Bigquery.svg"
-    },
-    {
-      "out": "logo-data-Redshift",
-      "category": "data",
-      "local": "../datasource-logo-redshift.png"
-    },
-    {
       "out": "logo-data-MySQL",
       "category": "data",
       "search": "MySQL"
@@ -97,11 +87,6 @@
       "search": "Google Drive"
     },
     {
-      "out": "logo-data-Gong",
-      "category": "data",
-      "local": "../datasource-logo-gong.png"
-    },
-    {
       "out": "logo-data-HubSpot",
       "category": "data",
       "search": "HubSpot"
@@ -120,16 +105,6 @@
       "out": "logo-data-Clarivate",
       "category": "data",
       "search": "Clarivate"
-    },
-    {
-      "out": "logo-data-MMIT",
-      "category": "data",
-      "local": "../datasource-logo-MMIT.png"
-    },
-    {
-      "out": "logo-data-IntegriChain",
-      "category": "data",
-      "local": "../datasource-logo-integrichain.svg"
     },
     {
       "out": "logo-data-Optum",
@@ -177,14 +152,9 @@
       "search": "Workday Inc"
     },
     {
-      "out": "logo-data-NetSuite",
-      "category": "data",
-      "local": "../datasource-logo-NetSuite-logo-mobius.svg"
-    },
-    {
       "out": "logo-data-MicrosoftDynamics",
       "category": "data",
-      "commons": "Microsoft Dynamics 365 Logo (2021–present).svg"
+      "commons": "Microsoft Dynamics 365 Logo (2021\u2013present).svg"
     },
     {
       "out": "logo-data-QuickBooks",
@@ -205,7 +175,8 @@
     {
       "out": "logo-bi-PowerBI",
       "category": "bi",
-      "search": "Power BI"
+      "commons": "New Power BI Logo.svg",
+      "note": "Wikidata 'Power BI' entity carries no P154 logo; pin the current Commons file directly."
     },
     {
       "out": "logo-bi-Looker",
@@ -280,11 +251,6 @@
       "search": "Microsoft PowerPoint"
     },
     {
-      "out": "logo-firm-NovoNordisk",
-      "category": "firm",
-      "local": "../Novo_Nordisk_-_Logo.svg"
-    },
-    {
       "out": "logo-firm-Bayer",
       "category": "firm",
       "search": "Bayer"
@@ -355,56 +321,105 @@
       "category": "Tellius",
       "self": true,
       "note": "First-party Tellius product icon (Kaiya chat). Committed directly; no external refresh source."
+    },
+    {
+      "out": "logo-data-Circana",
+      "category": "data",
+      "note": "Circana (2023 IRI+NPD rebrand). Current mark confirmed 2026-08-19 vs circana.com / Brandfetch. No Wikidata/Commons or hotlinkable source \u2014 human-verified, re-check periodically."
+    },
+    {
+      "out": "logo-bi-Collibra",
+      "category": "bi",
+      "commons": "Collibra-Logo-RGB-FullColor.png",
+      "note": "Collibra (collibra.com). Wikimedia Commons; committed file is byte-identical."
+    },
+    {
+      "out": "logo-bi-Atlan",
+      "category": "bi",
+      "commons": "Atlan-logo-full.svg",
+      "note": "Atlan (atlan.com). Wikimedia Commons; committed file is byte-identical."
+    },
+    {
+      "out": "logo-data-Numerator",
+      "category": "data",
+      "commons": "Numerator logo.svg",
+      "note": "Numerator (numerator.com). Wikimedia Commons; committed file is byte-identical."
+    },
+    {
+      "out": "logo-data-8451",
+      "category": "data",
+      "note": "84.51 (Kroger data/analytics subsidiary). Current mark confirmed 2026-08-19. No Wikidata/Commons; human-verified."
+    },
+    {
+      "out": "logo-data-DefinitiveHealthcare",
+      "category": "data",
+      "note": "Definitive Healthcare (definitivehc.com). Current mark confirmed 2026-08-19. No Wikidata/Commons; human-verified."
+    },
+    {
+      "out": "logo-data-Planful",
+      "category": "data",
+      "note": "Planful (planful.com). Current mark confirmed 2026-08-19. No Wikidata/Commons; human-verified."
+    },
+    {
+      "out": "logo-data-SPINS",
+      "category": "data",
+      "note": "SPINS (spins.com). Current mark confirmed 2026-08-19. No Wikidata/Commons; human-verified."
+    },
+    {
+      "out": "logo-data-SymphonyHealth",
+      "category": "data",
+      "note": "Symphony Health (ICON plc). Current mark confirmed 2026-08-19; low-res source. No Wikidata/Commons; human-verified."
+    },
+    {
+      "out": "logo-firm-NovoNordisk",
+      "category": "firm",
+      "note": "Novo Nordisk. Curated from Tellius assets (Novo_Nordisk_-_Logo.svg); bull mark confirmed 2026-08-19. No clean Wikidata/Commons company logo. Human-verified."
+    },
+    {
+      "out": "logo-data-NetSuite",
+      "category": "data",
+      "note": "Oracle NetSuite (mobius mark). Curated from Tellius assets; confirmed 2026-08-19. Wikidata P154 exists but is a different-style PNG lockup \u2014 kept curated SVG. Human-verified."
+    },
+    {
+      "out": "logo-data-BigQuery",
+      "category": "data",
+      "note": "Google BigQuery. Curated from Tellius assets; confirmed 2026-08-19. No Wikidata/Commons logo. Human-verified."
+    },
+    {
+      "out": "logo-data-Redshift",
+      "category": "data",
+      "note": "Amazon Redshift. Curated from Tellius assets; icon confirmed 2026-08-19. Human-verified."
+    },
+    {
+      "out": "logo-data-Gong",
+      "category": "data",
+      "note": "Gong (gong.io). Curated from Tellius assets; confirmed 2026-08-19. No Wikidata/Commons logo. Human-verified."
+    },
+    {
+      "out": "logo-data-MMIT",
+      "category": "data",
+      "note": "MMIT (Managed Markets Insight & Technology). Curated from Tellius assets; confirmed 2026-08-19. Human-verified."
+    },
+    {
+      "out": "logo-data-IntegriChain",
+      "category": "data",
+      "note": "IntegriChain. Curated from Tellius assets; confirmed 2026-08-19. Human-verified."
+    },
+    {
+      "out": "logo-data-KomodoHealth",
+      "category": "data",
+      "url": "https://www.komodohealth.com/wp-content/uploads/2026/04/Logo-Light.svg",
+      "note": "Komodo Health (komodohealth.com). Light-background logo (dark ink) \u2014 replaces the erroneously-committed white/dark-bg variant that rendered invisible on the wall."
     }
   ],
   "gaps_no_source_yet": [
     {
-      "out": "logo-data-Circana",
-      "note": "Circana (IRI+NPD) — no Wikidata P154; Wix site. Source from circana.com press kit or add url/commons to brands[]."
-    },
-    {
-      "out": "logo-data-KomodoHealth",
-      "note": "Komodo Health — no Wikidata entity. Add url from komodohealth.com brand assets."
-    },
-    {
-      "out": "logo-data-SymphonyHealth",
-      "note": "Symphony Health (ICON plc) — source from iconplc.com/symphony brand assets."
-    },
-    {
-      "out": "logo-data-SPINS",
-      "note": "SPINS — source from spins.com brand kit."
-    },
-    {
-      "out": "logo-data-8451",
-      "note": "84.51 (Kroger) — source from 8451.com brand assets."
-    },
-    {
-      "out": "logo-bi-Atlan",
-      "note": "Atlan (catalog) — source from atlan.com press/brand."
-    },
-    {
-      "out": "logo-bi-Collibra",
-      "note": "Collibra (catalog) — source from collibra.com brand assets."
-    },
-    {
       "out": "logo-data-OneStream",
-      "note": "OneStream Software — source from onestream.com brand assets."
-    },
-    {
-      "out": "logo-data-Planful",
-      "note": "Planful — source from planful.com brand assets."
+      "note": "OneStream Software \u2014 source from onestream.com brand assets."
     },
     {
       "out": "logo-data-AzureSynapse",
-      "note": "Azure Synapse — no distinct Wikidata/Commons logo; use logo-cloud-Azure or add url from azure.microsoft.com."
-    },
-    {
-      "out": "logo-data-DefinitiveHealthcare",
-      "note": "Definitive Healthcare — no Wikidata P154; source from definitivehc.com brand assets."
-    },
-    {
-      "out": "logo-data-Numerator",
-      "note": "Numerator — no Wikidata entity; source from numerator.com brand assets."
+      "note": "Azure Synapse \u2014 no distinct Wikidata/Commons logo; use logo-cloud-Azure or add url from azure.microsoft.com."
     }
   ],
   "mirror_dirs": [

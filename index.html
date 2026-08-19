@@ -38,9 +38,17 @@
   .card.broken .thumb::after{content:"no preview";color:var(--muted);font-size:11px}
   .card.broken .thumb img{display:none}
   .name{font-size:12px;word-break:break-word;line-height:1.35}
-  .badge{position:absolute;top:8px;right:8px;font-size:9px;letter-spacing:.03em;
+  .badges{position:absolute;top:8px;right:8px;display:flex;gap:4px;align-items:center}
+  .badge{font-size:9px;letter-spacing:.03em;
     text-transform:uppercase;padding:2px 6px;border-radius:6px;background:var(--chip);color:var(--muted)}
   .badge.curated{background:var(--accent);color:var(--accent-ink)}
+  /* freshness pill — days since last verified/updated (see freshness.json) */
+  .fresh{font-size:9px;font-weight:600;padding:2px 5px;border-radius:6px;line-height:1.2;
+    font-variant-numeric:tabular-nums;letter-spacing:.02em;border:1px solid transparent;cursor:help}
+  .fresh.f-green{background:#e7f7ec;color:#1a7f37;border-color:#bfe6cb}
+  .fresh.f-amber{background:#fef3e0;color:#9a6700;border-color:#f6dfae}
+  .fresh.f-red{background:#fdecec;color:#b42318;border-color:#f7cfc9}
+  .fresh.f-neutral{background:var(--chip);color:var(--muted);opacity:.7}
   .more{grid-column:1/-1;text-align:center;padding:18px}
   .more button{padding:11px 20px;border:1px solid var(--line);border-radius:11px;
     background:var(--card);color:var(--ink);cursor:pointer;font-size:14px}
@@ -123,28 +131,70 @@ const REPO = "https://cdn.jsdelivr.net/gh/dataruleseverythingaroundme/logos@main
 // files moved — every curated thumbnail 404'd. Regenerate with build_index.py.
 const PKG  = "curated.json";
 const MIRROR = "mirror.manifest.json";
+const FRESH = "freshness.json";
 const IMG = /\.(svg|png|gif|jpe?g|webp)$/i;
-const SKIP = new Set(["mirror.manifest.json","logos.manifest.json","curated.json"]);
+const SKIP = new Set(["mirror.manifest.json","logos.manifest.json","curated.json","freshness.json"]);
 const PAGE = 300;
 
 let all = [], filtered = [], shown = 0, source = "all", term = "";
+let fresh = {files:{}}, freshMap = {};
 const $ = id => document.getElementById(id);
 const grid = $("grid"), countEl = $("count"), toast = $("toast"), overlay = $("overlay");
 
+// --- freshness pill -------------------------------------------------------
+// Age = days since a mark was last verified-or-updated (freshness.json, kept
+// current by the biweekly refresh_logos.py Action). green<14 amber14-30 red>30.
+// First-party + product icons have no external source, so they render neutral.
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function daysSince(iso){
+  if(!iso) return null;
+  const [y,m,d] = iso.split("-").map(Number);
+  return Math.max(0, Math.floor((Date.now() - Date.UTC(y,m-1,d)) / 86400000));
+}
+function band(age, title){
+  const b = fresh.bands || {green:14, amber:30};
+  const cls = age < b.green ? "f-green" : (age <= b.amber ? "f-amber" : "f-red");
+  return {text: age+"d", cls, title: age+"d — "+title};
+}
+function freshInfo(e){
+  if(e.mirror){
+    const age = daysSince(fresh.mirror_verified);
+    return age==null ? null : band(age, "mirror index refreshed "+fresh.mirror_verified);
+  }
+  const rec = freshMap[e.file];
+  if(!rec) return null;
+  if(rec.source==="self")    return {text:"1p", cls:"f-neutral", title:"First-party mark — no external source to verify"};
+  if(rec.status==="product") return {text:"ui", cls:"f-neutral", title:"Product UI icon — no external source to verify"};
+  const age = daysSince(rec.verified || rec.updated);
+  if(age==null) return null;
+  const bits = [];
+  if(rec.verified) bits.push("verified "+rec.verified);
+  if(rec.updated)  bits.push("updated "+rec.updated);
+  if(rec.source)   bits.push("source: "+rec.source.split(":")[0]);
+  const info = band(age, bits.join(" · "));
+  if(rec.status==="unverifiable" || rec.status==="needs_review"){
+    if(info.cls==="f-green") info.cls = "f-amber";
+    info.title = "⚠ "+rec.status+" — "+info.title;
+  }
+  return info;
+}
+
 async function load(){
-  const [pkg, mirror] = await Promise.all([
+  const [pkg, mirror, fr] = await Promise.all([
     fetch(PKG).then(r=>r.json()).catch(()=>({files:[]})),
-    fetch(MIRROR).then(r=>r.json()).catch(()=>({mirror:[]}))
+    fetch(MIRROR).then(r=>r.json()).catch(()=>({mirror:[]})),
+    fetch(FRESH).then(r=>r.json()).catch(()=>({files:{}}))
   ]);
+  fresh = fr; freshMap = fr.files || {};
   const curated = (pkg.files||[])
     .filter(f=>IMG.test(f) && !SKIP.has(f))
     // thumb is same-origin so previews match the repo the moment a file lands;
     // url is the jsDelivr link people actually paste into decks and HTML.
-    .map(f=>({name:f.replace(IMG,""), source:"curated", url:REPO+"/"+f, thumb:encodeURIComponent(f), variants:null, files:null}));
+    .map(f=>({name:f.replace(IMG,""), file:f, source:"curated", url:REPO+"/"+f, thumb:encodeURIComponent(f), variants:null, files:null}));
   const curatedNames = new Set(curated.map(c=>c.name.toLowerCase()));
   const mir = (mirror.mirror||[])
     .filter(e=>!curatedNames.has(e.name.toLowerCase()))
-    .map(e=>({name:e.name, source:e.source, url:e.url, thumb:e.url, variants:e.variants||null, files:e.files||null}));
+    .map(e=>({name:e.name, source:e.source, url:e.url, thumb:e.url, variants:e.variants||null, files:e.files||null, mirror:true}));
   all = curated.concat(mir);
   $("sub").textContent =
     all.length.toLocaleString()+" logos · "+curated.length+" curated · "+mir.length.toLocaleString()+" mirrored (theSVG + gilbarbara). Click a logo to grab its link.";
@@ -171,8 +221,10 @@ function render(){
     const card = document.createElement("div");
     card.className = "card";
     const badge = e.source==="curated" ? "curated" : (e.source==="thesvg"?"theSVG":"gilbarbara");
+    const fi = freshInfo(e);
+    const freshHtml = fi ? '<span class="fresh '+fi.cls+'" title="'+esc(fi.title)+'">'+fi.text+'</span>' : '';
     card.innerHTML =
-      '<span class="badge '+(e.source==="curated"?"curated":"")+'">'+badge+'</span>'+
+      '<div class="badges"><span class="badge '+(e.source==="curated"?"curated":"")+'">'+badge+'</span>'+freshHtml+'</div>'+
       '<div class="thumb"><img loading="lazy" alt="" src="'+e.thumb+'"></div>'+
       '<div class="name">'+e.name+'</div>';
     card.querySelector("img").onerror = ()=>card.classList.add("broken");
@@ -207,8 +259,10 @@ function setUrl(url){
 
 function openDetail(e){
   $("mTitle").textContent = e.name;
-  $("mSub").textContent = e.source==="curated" ? "Curated in this repo" :
+  const origin = e.source==="curated" ? "Curated in this repo" :
     (e.source==="thesvg"?"Mirrored from theSVG":"Mirrored from gilbarbara");
+  const fi = freshInfo(e);
+  $("mSub").textContent = origin + (fi ? "  ·  "+fi.title : "");
   // variant chips
   const tokens = e.source==="thesvg" ? (e.variants||[]) : (e.source==="gilbarbara" ? (e.files||[]) : []);
   const wrap = $("mVarsWrap"), box = $("mVars");

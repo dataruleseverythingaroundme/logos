@@ -11,6 +11,7 @@ in this repo always win over a `logo-lib-` mirror entry for the same brand.
 Priority on slug collisions: theSVG first (multi-variant, actively maintained),
 then gilbarbara for anything theSVG lacks.
 """
+import datetime
 import json
 import urllib.request
 
@@ -100,6 +101,7 @@ def build():
             "Regenerate with refresh_mirror.py. Variant resolution: theSVG swap "
             "/default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`."
         ),
+        "generated": datetime.date.today().isoformat(),
         "generated_from": {"thesvg": THESVG_TREE, "gilbarbara": GILBARBARA_INDEX},
         "url_patterns": {"thesvg": TS_FILE_URL, "gilbarbara": GB_FILE_URL},
         "counts": {

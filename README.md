@@ -11,7 +11,7 @@ Naming: `<type>-<category>-<Name>.<ext>` — `type` is `logo` (default) or `icon
 Product connector UI icons use `type` = `icon`, e.g. `icon-data-<name>.<ext>` (slugs kept lowercase, e.g. `icon-data-hive_jdbc.png`).
 First-party marks: Tellius corporate → `ai` (e.g. `logo-ai-Tellius-T_Purple.png`); Tellius products → `Tellius` (e.g. `logo-Tellius-Kaiya-chat.png`) — committed directly, no external refresh source.
 
-See `logos.manifest.json` for the source-of-record mapping (Wikidata/Commons refresh).
+See `logos.manifest.json` for each brand's source of record (Wikidata search, Commons file, direct URL, local copy, or first-party). `refresh_logos.py` re-checks every curated mark against that source — see **Freshness** below.
 
 ## Logo Wall (`index.html`)
 Browsable gallery at https://dataruleseverythingaroundme.github.io/logos/ — search, filter, click to copy a link.
@@ -19,6 +19,24 @@ Browsable gallery at https://dataruleseverythingaroundme.github.io/logos/ — se
 It renders the curated grid from `curated.json`, a flat list of the image filenames in this repo. **If you add or rename a logo, run `python3 build_index.py`** so the wall picks it up; the `wall-index` Action also rebuilds it on every push to `main`.
 
 Don't point the wall back at jsDelivr's package-metadata API (`data.jsdelivr.com/v1/packages/...@main`). It snapshots a branch and won't re-crawl on demand, so it kept listing pre-rename filenames for weeks after the files moved and every curated thumbnail 404'd. Per-file CDN URLs are unaffected — only the listing endpoint goes stale.
+
+## Freshness — auto-checked every 2 weeks
+Each curated mark carries a source of record in `logos.manifest.json`. `refresh_logos.py` walks those and re-checks every mark against its live original — Wikidata → Commons (comparing the Commons file's sha1), or a byte-hash for direct URLs — and writes `freshness.json`: per file, when it was last `verified` (confirmed to still match upstream), when the bytes last `updated`, and a `status`.
+
+Safety (this repo pushes straight to `main` and marketing hotlinks it): the first sighting of a file only records its upstream fingerprint and marks it verified — it never rewrites bytes. A file is replaced only when upstream genuinely changed **and** the new bytes validate **and** keep the same extension, so a pasted deck hotlink (`…logo-bi-Looker.svg`) can't 404 or turn into a broken image. Anything else — an extension change, a failed download/validation, a dead source — is flagged and left untouched to age in the wall.
+
+The `logo-freshness` Action runs this on the 1st and 15th (and on demand via *Run workflow*), refreshes the mirror index too, and pushes any changes. Run it locally with `python3 refresh_logos.py` (add `--dry-run` to report without writing).
+
+The wall draws a small freshness pill on each card — days since last verified-or-updated, **green <14d · amber 14–30d · red >30d**. First-party marks and product-UI icons render neutral (nothing external to verify); `local` copies and not-yet-sourced brands age, as a nudge to give them a real source.
+
+## Adding a logo
+`add_logo.py` is the one right way — it validates the image, names it to convention, dedupes, registers the source in `logos.manifest.json`, stamps `freshness.json`, and rebuilds `curated.json`:
+```
+python3 add_logo.py --out logo-bi-Cube  --category bi   --url https://cube.dev/…/logo.svg
+python3 add_logo.py --out logo-data-Foo --category data --search "Foo Inc"                  # Wikidata → Commons
+python3 add_logo.py --out logo-firm-Bar --category firm --file ./bar.svg --note "bar.com media kit"
+```
+Prefer a re-checkable source (`--search` / `--commons` / `--url`) over `--file`, so the biweekly job can keep verifying it. The **`/logo`** Claude Code command automates this for a batch: it harvests the brands a working session couldn't find, sources + disambiguates each, and runs `add_logo.py` for you.
 
 ## Mirror layer — the long tail (`mirror.manifest.json`)
 `mirror.manifest.json` is a **reference-only** index of the two public fallback libraries below, keyed under this repo's convention. **No image bytes are stored here** — every entry's `url` points at an upstream jsDelivr file. It exists so a lookup ("do we have a Databricks logo?") covers ~6,400 more brands without vendoring them.

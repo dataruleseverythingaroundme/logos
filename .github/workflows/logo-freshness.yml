@@ -1,0 +1,62 @@
+name: logo-freshness
+
+# Every ~2 weeks: re-check each curated brand mark against its original source
+# (Wikidata->Commons / HubSpot / URL), refresh any that changed upstream, and
+# stamp freshness.json so the Logo Wall's pills stay honest. Also refreshes the
+# theSVG/gilbarbara mirror index so its cards stay current too.
+#
+# Runs on the 1st and 15th at 13:00 UTC (~9am ET). Also runnable on demand.
+on:
+  schedule:
+    - cron: "0 13 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: logo-freshness
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install --quiet pillow
+
+      - name: Refresh the theSVG + gilbarbara mirror index
+        run: python3 refresh_mirror.py
+        continue-on-error: true   # upstream libs are best-effort; never block the curated check
+
+      - name: Verify curated logos against source + stamp freshness
+        run: python3 refresh_logos.py
+
+      - name: Keep curated.json in sync
+        run: python3 build_index.py
+
+      - name: Commit any changes
+        run: |
+          if git diff --quiet; then
+            echo "Nothing changed — all logos verified, no drift."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Logo freshness: biweekly source re-check [skip ci]"
+          git push
+          {
+            echo "### Logo freshness run"
+            echo ""
+            echo "Committed changes:"
+            echo '```'
+            git show --stat --oneline HEAD | head -40
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
