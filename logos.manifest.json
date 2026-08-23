@@ -560,6 +560,12 @@
       "out": "logo-bi-Promethium",
       "category": "bi",
       "note": "source: https://promethium.ai/wp-content/themes/promethium/assets/images/src/favicon.png"
+    },
+    {
+      "out": "logo-firm-ZS",
+      "category": "firm",
+      "commons": "ZS Associates.svg",
+      "note": "Wikidata Q25000239 -> Wikimedia Commons; official ZS Associates brand mark (SVG)"
     }
   ],
   "gaps_no_source_yet": [

@@ -1005,6 +1005,13 @@
    "verified": "2026-08-19",
    "status": "added",
    "source": "file"
+  },
+  "logo-firm-ZS.svg": {
+   "updated": "2026-08-23",
+   "verified": "2026-08-23",
+   "status": "added",
+   "source": "commons:ZS Associates.svg",
+   "src_hash": "sha1:cf40883e837ea17777037e8fc661b1af22cf36e0"
   }
  }
 }
