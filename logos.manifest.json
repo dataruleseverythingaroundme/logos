@@ -566,6 +566,21 @@
       "category": "firm",
       "commons": "ZS Associates.svg",
       "note": "Wikidata Q25000239 -> Wikimedia Commons; official ZS Associates brand mark (SVG)"
+    },
+    {
+      "out": "logo-firm-PMSA",
+      "category": "firm",
+      "note": "Pharmaceutical Management Science Association (pmsa.net), official logo from 2026-08 PMSA webinar deck"
+    },
+    {
+      "out": "logo-ai-Tellius-white",
+      "category": "ai",
+      "note": "Tellius all-white wordmark for dark backgrounds, official brand asset"
+    },
+    {
+      "out": "logo-firm-Agios-white",
+      "category": "firm",
+      "note": "Agios Pharmaceuticals white wordmark for dark backgrounds (agios.com), official asset from 2026-08 PMSA webinar deck"
     }
   ],
   "gaps_no_source_yet": [

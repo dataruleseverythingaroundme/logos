@@ -1012,6 +1012,24 @@
    "status": "added",
    "source": "commons:ZS Associates.svg",
    "src_hash": "sha1:cf40883e837ea17777037e8fc661b1af22cf36e0"
+  },
+  "logo-firm-PMSA.png": {
+   "updated": "2026-08-27",
+   "verified": "2026-08-27",
+   "status": "added",
+   "source": "file"
+  },
+  "logo-ai-Tellius-white.png": {
+   "updated": "2026-08-27",
+   "verified": "2026-08-27",
+   "status": "added",
+   "source": "file"
+  },
+  "logo-firm-Agios-white.svg": {
+   "updated": "2026-08-27",
+   "verified": "2026-08-27",
+   "status": "added",
+   "source": "file"
   }
  }
 }
