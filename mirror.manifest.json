@@ -1,5 +1,6 @@
 {
-  "_comment": "Reference-only mirror of the two public fallback logo libraries, keyed under this repo's naming convention. NO image bytes are stored here — every entry's `url` resolves to an upstream jsDelivr file. Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions (multi-variant), gilbarbara fills gaps. Curated files in this repo always take precedence over a lib- mirror entry for the same brand. Regenerate with refresh_mirror.py. Variant resolution: theSVG swap /default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`.",
+  "_comment": "Reference-only mirror of the two public fallback logo libraries, keyed under this repo's naming convention. NO image bytes are stored here \u2014 every entry's `url` resolves to an upstream jsDelivr file. Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions (multi-variant), gilbarbara fills gaps. Curated files in this repo always take precedence over a lib- mirror entry for the same brand. Regenerate with refresh_mirror.py. Variant resolution: theSVG swap /default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`.",
+  "generated": "2026-09-01",
   "generated_from": {
     "thesvg": "https://data.jsdelivr.com/v1/packages/gh/glincker/thesvg@main",
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos.json"
@@ -9,10 +10,10 @@
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/{file}"
   },
   "counts": {
-    "total": 6368,
+    "total": 6373,
     "thesvg": 5651,
-    "gilbarbara_net_new": 717,
-    "gilbarbara_deduped": 685
+    "gilbarbara_net_new": 722,
+    "gilbarbara_deduped": 689
   },
   "mirror": [
     {
@@ -2171,6 +2172,15 @@
       ]
     },
     {
+      "name": "logo-lib-apache-aurora",
+      "source": "gilbarbara",
+      "slug": "apache-aurora",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apache-aurora.svg",
+      "files": [
+        "apache-aurora.svg"
+      ]
+    },
+    {
       "name": "logo-lib-apache-avro",
       "source": "thesvg",
       "slug": "apache-avro",
@@ -2340,6 +2350,15 @@
       ]
     },
     {
+      "name": "logo-lib-apache-http",
+      "source": "gilbarbara",
+      "slug": "apache-http",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apache-http.svg",
+      "files": [
+        "apache-http.svg"
+      ]
+    },
+    {
       "name": "logo-lib-apache-jmeter",
       "source": "thesvg",
       "slug": "apache-jmeter",
@@ -2465,6 +2484,16 @@
       ]
     },
     {
+      "name": "logo-lib-apache-software-foundation",
+      "source": "gilbarbara",
+      "slug": "apache-software-foundation",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apache-software-foundation.svg",
+      "files": [
+        "apache-software-foundation-icon.svg",
+        "apache-software-foundation.svg"
+      ]
+    },
+    {
       "name": "logo-lib-apache-solr",
       "source": "thesvg",
       "slug": "apache-solr",
@@ -2512,15 +2541,6 @@
       "variants": [
         "default",
         "mono"
-      ]
-    },
-    {
-      "name": "logo-lib-apache_cloudstack",
-      "source": "gilbarbara",
-      "slug": "apache_cloudstack",
-      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apache_cloudstack.svg",
-      "files": [
-        "apache_cloudstack.svg"
       ]
     },
     {
@@ -3529,15 +3549,6 @@
       "variants": [
         "default",
         "mono"
-      ]
-    },
-    {
-      "name": "logo-lib-aurora",
-      "source": "gilbarbara",
-      "slug": "aurora",
-      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/aurora.svg",
-      "files": [
-        "aurora.svg"
       ]
     },
     {
@@ -24823,12 +24834,31 @@
       ]
     },
     {
+      "name": "logo-lib-dojo-toolkit",
+      "source": "gilbarbara",
+      "slug": "dojo-toolkit",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/dojo-toolkit.svg",
+      "files": [
+        "dojo-toolkit.svg"
+      ]
+    },
+    {
       "name": "logo-lib-dokku",
       "source": "thesvg",
       "slug": "dokku",
       "url": "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/dokku/default.svg",
       "variants": [
         "default"
+      ]
+    },
+    {
+      "name": "logo-lib-dokploy",
+      "source": "gilbarbara",
+      "slug": "dokploy",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/dokploy.svg",
+      "files": [
+        "dokploy-dark.svg",
+        "dokploy.svg"
       ]
     },
     {
@@ -31716,6 +31746,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-google-aistudio",
+      "source": "gilbarbara",
+      "slug": "google-aistudio",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/google-aistudio.svg",
+      "files": [
+        "google-aistudio-dark.svg",
+        "google-aistudio.svg"
       ]
     },
     {
@@ -53011,6 +53051,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-signoz",
+      "source": "gilbarbara",
+      "slug": "signoz",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/signoz.svg",
+      "files": [
+        "signoz.svg"
       ]
     },
     {
