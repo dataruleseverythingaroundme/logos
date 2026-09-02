@@ -581,6 +581,24 @@
       "out": "logo-firm-Agios-white",
       "category": "firm",
       "note": "Agios Pharmaceuticals white wordmark for dark backgrounds (agios.com), official asset from 2026-08 PMSA webinar deck"
+    },
+    {
+      "out": "logo-firm-Axtria",
+      "category": "firm",
+      "url": "https://www.axtria.com/hubfs/logo.svg",
+      "note": "axtria.com official header brand asset (SVG); life sciences commercial analytics"
+    },
+    {
+      "out": "logo-firm-C5i",
+      "category": "firm",
+      "url": "https://www.c5i.ai/wp-content/themes/course5iTheme/new-assets/images/c5i-primary-logo.svg",
+      "note": "c5i.ai official primary logo (SVG); Course5 Intelligence rebranded to C5i, May 2024"
+    },
+    {
+      "out": "logo-data-FingertipFormulary",
+      "category": "data",
+      "commons": "Clarivate Analytics logo.svg",
+      "note": "STAND-IN: Clarivate parent corporate mark (colored, official Wikimedia Commons via Wikidata Q27991358). Fingertip Formulary has no distinct logo; brand folded into Clarivate as 'DRG Fingertip Foundations'; standalone domain dead. Older 'Analytics' wordmark; symbol current."
     }
   ],
   "gaps_no_source_yet": [

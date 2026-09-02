@@ -1031,6 +1031,27 @@
    "updated": "2026-07-24",
    "source": "product",
    "status": "product"
+  },
+  "logo-firm-Axtria.svg": {
+   "updated": "2026-09-01",
+   "verified": "2026-09-01",
+   "status": "added",
+   "source": "url:https://www.axtria.com/hubfs/logo.svg",
+   "src_hash": "sha256:57361cb728bc2fd913015189533ffea1b3147060ba956ea9dcd50b7ae977061a"
+  },
+  "logo-firm-C5i.svg": {
+   "updated": "2026-09-01",
+   "verified": "2026-09-01",
+   "status": "added",
+   "source": "url:https://www.c5i.ai/wp-content/themes/course5iTheme/new-assets/images/c5i-primary-logo.svg",
+   "src_hash": "sha256:388512f8e6b2733dfa5e9939f0380ac3102331eb466dd70df11054246b998e52"
+  },
+  "logo-data-FingertipFormulary.svg": {
+   "updated": "2026-09-02",
+   "verified": "2026-09-02",
+   "status": "added",
+   "source": "commons:Clarivate Analytics logo.svg",
+   "src_hash": "sha1:cfe428aa1d518cc4e0f57f3b22c2c56ed94a7199"
   }
  }
 }
