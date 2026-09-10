@@ -599,6 +599,12 @@
       "category": "data",
       "commons": "Clarivate Analytics logo.svg",
       "note": "STAND-IN: Clarivate parent corporate mark (colored, official Wikimedia Commons via Wikidata Q27991358). Fingertip Formulary has no distinct logo; brand folded into Clarivate as 'DRG Fingertip Foundations'; standalone domain dead. Older 'Analytics' wordmark; symbol current."
+    },
+    {
+      "out": "logo-bi-AisleAI",
+      "category": "bi",
+      "url": "https://aisleai.com/wp-content/uploads/2025/09/logo-reverse.svg",
+      "note": "aisleai.com official brand asset (primary blue #003880 mark)"
     }
   ],
   "gaps_no_source_yet": [

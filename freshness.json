@@ -1052,6 +1052,13 @@
    "status": "added",
    "source": "commons:Clarivate Analytics logo.svg",
    "src_hash": "sha1:cfe428aa1d518cc4e0f57f3b22c2c56ed94a7199"
+  },
+  "logo-bi-AisleAI.svg": {
+   "updated": "2026-09-10",
+   "verified": "2026-09-10",
+   "status": "added",
+   "source": "url:https://aisleai.com/wp-content/uploads/2025/09/logo-reverse.svg",
+   "src_hash": "sha256:91834488b18faf6d66576a6a0e4b11a97f7b52b03ab03e84caaf4e823eb45df0"
   }
  }
 }
