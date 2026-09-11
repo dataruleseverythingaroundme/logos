@@ -1059,6 +1059,20 @@
    "status": "added",
    "source": "url:https://aisleai.com/wp-content/uploads/2025/09/logo-reverse.svg",
    "src_hash": "sha256:91834488b18faf6d66576a6a0e4b11a97f7b52b03ab03e84caaf4e823eb45df0"
+  },
+  "logo-data-ModelN.png": {
+   "updated": "2026-09-10",
+   "verified": "2026-09-10",
+   "status": "added",
+   "source": "url:https://www.modeln.com/wp-content/themes/modeln/img/modeln-logo.png",
+   "src_hash": "sha256:287cdd8f323d7dd5d837eb11ef7536b4745ca73a0ae8d7d356fa7e862e9f033e"
+  },
+  "logo-data-HRSA.png": {
+   "updated": "2026-09-10",
+   "verified": "2026-09-10",
+   "status": "added",
+   "source": "commons:HRSA-Logo.png",
+   "src_hash": "sha1:06565241ac703d6889a190c830edb7742c5358ca"
   }
  }
 }

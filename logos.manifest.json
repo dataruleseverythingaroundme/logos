@@ -605,6 +605,18 @@
       "category": "bi",
       "url": "https://aisleai.com/wp-content/uploads/2025/09/logo-reverse.svg",
       "note": "aisleai.com official brand asset (primary blue #003880 mark)"
+    },
+    {
+      "out": "logo-data-ModelN",
+      "category": "data",
+      "url": "https://www.modeln.com/wp-content/themes/modeln/img/modeln-logo.png",
+      "note": "modeln.com theme header logo (official site asset; no SVG published)"
+    },
+    {
+      "out": "logo-data-HRSA",
+      "category": "data",
+      "commons": "HRSA-Logo.png",
+      "note": "Wikimedia Commons (P154 family); hrsa.gov blocks automated fetch (Akamai)"
     }
   ],
   "gaps_no_source_yet": [
