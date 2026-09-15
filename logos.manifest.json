@@ -617,6 +617,12 @@
       "category": "data",
       "commons": "HRSA-Logo.png",
       "note": "Wikimedia Commons (P154 family); hrsa.gov blocks automated fetch (Akamai)"
+    },
+    {
+      "out": "logo-firm-Gartner",
+      "category": "firm",
+      "commons": "Gartner logo.svg",
+      "note": "Gartner wordmark; Wikimedia Commons, sourced from Gartner"
     }
   ],
   "gaps_no_source_yet": [

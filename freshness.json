@@ -1073,6 +1073,13 @@
    "updated": "2026-07-24",
    "source": "product",
    "status": "product"
+  },
+  "logo-firm-Gartner.svg": {
+   "updated": "2026-09-15",
+   "verified": "2026-09-15",
+   "status": "added",
+   "source": "commons:Gartner logo.svg",
+   "src_hash": "sha1:57d56b2a93e8edfca00398fb0e901b539a14918a"
   }
  }
 }
