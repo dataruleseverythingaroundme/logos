@@ -1,6 +1,6 @@
 {
   "_comment": "Reference-only mirror of the two public fallback logo libraries, keyed under this repo's naming convention. NO image bytes are stored here \u2014 every entry's `url` resolves to an upstream jsDelivr file. Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions (multi-variant), gilbarbara fills gaps. Curated files in this repo always take precedence over a lib- mirror entry for the same brand. Regenerate with refresh_mirror.py. Variant resolution: theSVG swap /default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`.",
-  "generated": "2026-09-01",
+  "generated": "2026-09-15",
   "generated_from": {
     "thesvg": "https://data.jsdelivr.com/v1/packages/gh/glincker/thesvg@main",
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos.json"
@@ -10,10 +10,10 @@
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/{file}"
   },
   "counts": {
-    "total": 6373,
+    "total": 6383,
     "thesvg": 5651,
-    "gilbarbara_net_new": 722,
-    "gilbarbara_deduped": 689
+    "gilbarbara_net_new": 732,
+    "gilbarbara_deduped": 707
   },
   "mirror": [
     {
@@ -2077,6 +2077,15 @@
         "wordmark",
         "wordmark-dark",
         "wordmark-light"
+      ]
+    },
+    {
+      "name": "logo-lib-antigravity",
+      "source": "gilbarbara",
+      "slug": "antigravity",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/antigravity.svg",
+      "files": [
+        "antigravity.svg"
       ]
     },
     {
@@ -20299,6 +20308,16 @@
       ]
     },
     {
+      "name": "logo-lib-cartesia",
+      "source": "gilbarbara",
+      "slug": "cartesia",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/cartesia.svg",
+      "files": [
+        "cartesia-icon.svg",
+        "cartesia.svg"
+      ]
+    },
+    {
       "name": "logo-lib-carto",
       "source": "thesvg",
       "slug": "carto",
@@ -22005,6 +22024,16 @@
       ]
     },
     {
+      "name": "logo-lib-codex",
+      "source": "gilbarbara",
+      "slug": "codex",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/codex.svg",
+      "files": [
+        "codex-dark.svg",
+        "codex.svg"
+      ]
+    },
+    {
       "name": "logo-lib-codex-openai",
       "source": "thesvg",
       "slug": "codex-openai",
@@ -23439,6 +23468,16 @@
       ]
     },
     {
+      "name": "logo-lib-daily",
+      "source": "gilbarbara",
+      "slug": "daily",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/daily.svg",
+      "files": [
+        "daily-icon.svg",
+        "daily.svg"
+      ]
+    },
+    {
       "name": "logo-lib-dailydev",
       "source": "gilbarbara",
       "slug": "dailydev",
@@ -24295,6 +24334,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-devin",
+      "source": "gilbarbara",
+      "slug": "devin",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/devin.svg",
+      "files": [
+        "devin.svg"
       ]
     },
     {
@@ -28046,10 +28094,10 @@
       "name": "logo-lib-forest",
       "source": "gilbarbara",
       "slug": "forest",
-      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/forestadmin.svg",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/forest.svg",
       "files": [
-        "forestadmin-icon.svg",
-        "forestadmin.svg"
+        "forest-icon.svg",
+        "forest.svg"
       ]
     },
     {
@@ -32138,6 +32186,7 @@
       "slug": "google-gmail",
       "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/google-gmail.svg",
       "files": [
+        "google-gmail-2020.svg",
         "google-gmail.svg"
       ]
     },
@@ -37532,6 +37581,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-kilo",
+      "source": "gilbarbara",
+      "slug": "kilo",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/kilo.svg",
+      "files": [
+        "kilo-dark.svg",
+        "kilo.svg"
       ]
     },
     {
@@ -43490,7 +43549,6 @@
       "slug": "neverinstall",
       "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/neverinstall.svg",
       "files": [
-        "neverinstall-icon.svg",
         "neverinstall.svg"
       ]
     },
@@ -47103,6 +47161,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-pico-css",
+      "source": "gilbarbara",
+      "slug": "pico-css",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/pico-css.svg",
+      "files": [
+        "pico-css.svg"
       ]
     },
     {
@@ -51636,6 +51703,15 @@
       ]
     },
     {
+      "name": "logo-lib-runable",
+      "source": "gilbarbara",
+      "slug": "runable",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/runable.svg",
+      "files": [
+        "runable.svg"
+      ]
+    },
+    {
       "name": "logo-lib-rundeck",
       "source": "thesvg",
       "slug": "rundeck",
@@ -55283,6 +55359,16 @@
       ]
     },
     {
+      "name": "logo-lib-stylex",
+      "source": "gilbarbara",
+      "slug": "stylex",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/stylex.svg",
+      "files": [
+        "stylex-icon.svg",
+        "stylex.svg"
+      ]
+    },
+    {
       "name": "logo-lib-stylis",
       "source": "gilbarbara",
       "slug": "stylis",
@@ -56289,6 +56375,7 @@
       "slug": "tealium",
       "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/tealium.svg",
       "files": [
+        "tealium-icon.svg",
         "tealium.svg"
       ]
     },
@@ -59533,6 +59620,15 @@
       ]
     },
     {
+      "name": "logo-lib-vercel-ai-sdk",
+      "source": "gilbarbara",
+      "slug": "vercel-ai-sdk",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/vercel-ai-sdk.svg",
+      "files": [
+        "vercel-ai-sdk.svg"
+      ]
+    },
+    {
       "name": "logo-lib-vercel-blob",
       "source": "thesvg",
       "slug": "vercel-blob",
@@ -61774,6 +61870,7 @@
       "slug": "x-ai",
       "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/x-ai.svg",
       "files": [
+        "x-ai-dark.svg",
         "x-ai.svg"
       ]
     },

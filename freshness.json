@@ -1,165 +1,165 @@
 {
  "_comment": "Per-file freshness for the Logo Wall pill. Written by refresh_logos.py (biweekly Action) and /logo. Dates UTC ISO-8601. status: verified (matched upstream) | updated (art changed) | added (new via /logo) | manual (self/local \u2014 no live source, ages) | product (internal UI icon) | unverifiable (source went dead) | needs_review (upstream changed shape). Pill age = days since max(verified, updated); green<14 amber14-30 red>30; self/product render neutral.",
- "generated": "2026-09-01",
+ "generated": "2026-09-15",
  "cadence_days": 14,
  "bands": {
   "green": 14,
   "amber": 30
  },
- "mirror_verified": "2026-09-01",
+ "mirror_verified": "2026-09-15",
  "files": {
   "logo-data-Snowflake.svg": {
    "updated": "2026-07-24",
    "source": "search:Snowflake Inc",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:54fd8be59367b2dcae315cdd6c41151b49b1c471"
   },
   "logo-data-Databricks.png": {
    "updated": "2026-07-24",
    "source": "search:Databricks",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:7816585af5a0e43c2bcf504ec542594afb8b2d3a"
   },
   "logo-data-MySQL.svg": {
    "updated": "2026-07-24",
    "source": "search:MySQL",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:6738e9dd2dcc928ae4dc338e28a319357e3350b5"
   },
   "logo-data-PostgreSQL.svg": {
    "updated": "2026-07-24",
    "source": "search:PostgreSQL",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:a12b3aad882cd4c12d09990b923c09b114787e51"
   },
   "logo-data-MicrosoftSQLServer.svg": {
    "updated": "2026-07-24",
    "source": "commons:Microsoft SQL Server 2025 icon.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:42d0f40b1387d670848a7eb97510ba835c2d76c5"
   },
   "logo-data-Oracle.svg": {
    "updated": "2026-07-24",
    "source": "search:Oracle Corporation",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:a4f8d635549943afc17fba3e2564aaf04efb9255"
   },
   "logo-data-Teradata.svg": {
    "updated": "2026-07-24",
    "source": "search:Teradata",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:5a3d019567256da2783ee45ecaa56bd446e14be6"
   },
   "logo-data-MongoDB.svg": {
    "updated": "2026-07-24",
    "source": "search:MongoDB",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:36aaa31fac344d1e7d02b79c54d16e9e7176f644"
   },
   "logo-data-Cassandra.svg": {
    "updated": "2026-07-24",
    "source": "search:Apache Cassandra",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:9f0bed90924f6a1bf39428c7b84638206610a775"
   },
   "logo-data-Elasticsearch.svg": {
    "updated": "2026-07-24",
    "source": "search:Elasticsearch",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:069b8b5a0b666bd9147efad974104618580cc85b"
   },
   "logo-data-ApacheHive.svg": {
    "updated": "2026-07-24",
    "source": "search:Apache Hive",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:f38bf5f1f478beafca23706ab8c747f4a9d37542"
   },
   "logo-data-ApacheSpark.svg": {
    "updated": "2026-07-24",
    "source": "search:Apache Spark",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:f5b013a530474f390afb2599a4990ac406a0a33b"
   },
   "logo-data-ApacheHadoop.svg": {
    "updated": "2026-07-24",
    "source": "search:Apache Hadoop",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:6d9d7b9f5eb1ede68bf0fdc820ecac38b0fbd6dd"
   },
   "logo-data-Salesforce.svg": {
    "updated": "2026-07-24",
    "source": "search:Salesforce",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:aac04dc55d681d62c01152ba4f535d3628592432"
   },
   "logo-data-GoogleAnalytics.svg": {
    "updated": "2026-07-24",
    "source": "search:Google Analytics",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:1fab0fdc98d6afb548ac306d3cc16205ca81963f"
   },
   "logo-data-MicrosoftExcel.svg": {
    "updated": "2026-07-24",
    "source": "search:Microsoft Excel",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:92d52cf9c402993dbd1793241cc2daef487fbf44"
   },
   "logo-data-GoogleDrive.svg": {
    "updated": "2026-07-24",
    "source": "search:Google Drive",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:395568e2477f6cfc4490f8ea585de08e1872385a"
   },
   "logo-data-HubSpot.svg": {
    "updated": "2026-07-24",
    "source": "search:HubSpot",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:308bd7c7cc626e774abed93cae9e441a5284bddf"
   },
   "logo-data-IQVIA.svg": {
    "updated": "2026-07-24",
    "source": "search:IQVIA",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:855b0b15ee0b6704d66c32d3f88b391c40b9afec"
   },
   "logo-data-Veeva.svg": {
    "updated": "2026-07-24",
    "source": "search:Veeva Systems",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:e4e100fe61b8443611ef08478f0b5b5c33541bcd"
   },
   "logo-data-Clarivate.svg": {
    "updated": "2026-07-24",
    "source": "search:Clarivate",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:cfe428aa1d518cc4e0f57f3b22c2c56ed94a7199"
   },
   "logo-data-Optum.svg": {
    "updated": "2026-07-24",
    "source": "search:Optum",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:264a7f8bbef4c6f1aff461ad4241c3cde9ceb091"
   },
   "logo-data-Datavant.png": {
@@ -174,266 +174,266 @@
    "updated": "2026-07-24",
    "source": "search:NielsenIQ",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:3ca06fe831c002573a0fb0a788a6efb7b9ef1f5a"
   },
   "logo-data-Walmart.svg": {
    "updated": "2026-07-24",
    "source": "search:Walmart",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:46737c9b423adede81050f437a1428db0c455816"
   },
   "logo-data-Amazon.svg": {
    "updated": "2026-07-24",
    "source": "commons:Amazon logo.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:4f68393dd2b6b847d8a83c0e2a2bbee4cf35d580"
   },
   "logo-data-Instacart.svg": {
    "updated": "2026-07-24",
    "source": "search:Instacart",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:d414b71fe43e4e532e8c441f919cfe3a8f5da13d"
   },
   "logo-data-SAP.svg": {
    "updated": "2026-07-24",
    "source": "search:SAP SE",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:517a9b8a131b079d83b5ba8e293473cce2a0132d"
   },
   "logo-data-Anaplan.png": {
    "updated": "2026-07-24",
    "source": "search:Anaplan",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:8388603324209fc7a4f7781875114791802e1991"
   },
   "logo-data-Workday.svg": {
    "updated": "2026-07-24",
    "source": "search:Workday Inc",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:0ebca07287e30fa015643b93063ed3fb724573e9"
   },
   "logo-data-MicrosoftDynamics.svg": {
    "updated": "2026-07-24",
    "source": "commons:Microsoft Dynamics 365 Logo (2021\u2013present).svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:86a3c13c3d3b10390d4160c91b52b2e30f8fd276"
   },
   "logo-data-QuickBooks.svg": {
    "updated": "2026-07-24",
    "source": "search:QuickBooks",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:6477dfee0b967115f3bf7d8a50c4a1c18c2f0435"
   },
   "logo-data-Notion.png": {
    "updated": "2026-09-01",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/notion.png",
-   "status": "updated",
-   "verified": "2026-09-01",
+   "status": "verified",
+   "verified": "2026-09-15",
    "src_hash": "sha256:89be82a3c15f115d1e860415ef05bcf7d731b4d0bb2aacf431885fcd4753a426"
   },
   "logo-bi-Tableau.png": {
    "updated": "2026-07-24",
    "source": "search:Tableau Software",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:654701f5e049f007debcd581c80d746c4d919139"
   },
   "logo-bi-PowerBI.svg": {
    "updated": "2026-07-24",
    "source": "commons:New Power BI Logo.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:d7970d2993e48af71106f8dccc1f7fb7aa50fc4d"
   },
   "logo-bi-Looker.svg": {
    "updated": "2026-07-24",
    "source": "commons:Looker.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:e517a219d762a7ed78e8a4f2bfc353dfaf860f10"
   },
   "logo-bi-Qlik.svg": {
    "updated": "2026-07-24",
    "source": "search:Qlik",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:80e9d476cba74c36dc3d7956649125c68dbc557a"
   },
   "logo-bi-MicroStrategy.gif": {
    "updated": "2026-07-24",
    "source": "search:MicroStrategy",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:d479b72945c937bb0aa39710bbfee239f7b3ea65"
   },
   "logo-bi-ThoughtSpot.png": {
    "updated": "2026-07-24",
    "source": "commons:ThoughtSpot logo 2019.png",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:50c7975fb8a0032e499e8c786ad13f1d1ab2084f"
   },
   "logo-bi-dbt.png": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/dbt-icon-2yxlz1fvy25mvn5scgnlw.webp",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:c9e48ccf800d4117805296448887b5b8c4c77b3305f2b4f6375a2554c00e6205"
   },
   "logo-bi-AtScale.png": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/Atscale.webp",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:0dbdf0436687f98e003636834c053592166743acf15a6d8e324e0db8105a8f94"
   },
   "logo-cloud-AWS.svg": {
    "updated": "2026-07-24",
    "source": "search:Amazon Web Services",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:0efc08f7d2390100e801d656b977f5c08bc2e273"
   },
   "logo-cloud-Azure.svg": {
    "updated": "2026-07-24",
    "source": "search:Microsoft Azure",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:dbab00f73779a2c08aa9595500b54490ca32f677"
   },
   "logo-cloud-GoogleCloud.svg": {
    "updated": "2026-07-24",
    "source": "search:Google Cloud Platform",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:786c39f9a25992bcf46aa7ec0068d6c0dfc0efce"
   },
   "logo-comms-Slack.svg": {
    "updated": "2026-07-24",
    "source": "search:Slack Technologies",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:761252717319ef8733e6bba139f827f0e709db43"
   },
   "logo-comms-MicrosoftTeams.svg": {
    "updated": "2026-07-24",
    "source": "search:Microsoft Teams",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:4debbc36f27d4e9b28cd5e1edfae8c4980cf4f52"
   },
   "logo-comms-MicrosoftOutlook.svg": {
    "updated": "2026-07-24",
    "source": "search:Microsoft Outlook",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:0cfae8496355008e6d095366a535828deca0aa48"
   },
   "logo-comms-Gmail.svg": {
    "updated": "2026-07-24",
    "source": "search:Gmail",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:2630469c5d7896412abe14818cd0e8562d557a1f"
   },
   "logo-output-PowerPoint.svg": {
    "updated": "2026-07-24",
    "source": "search:Microsoft PowerPoint",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:7c9e09b7488f5fcf3eafb0d0ba48d5bc9cee9825"
   },
   "logo-firm-Bayer.svg": {
    "updated": "2026-07-24",
    "source": "search:Bayer",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:4f762bd22dbc670970bc3b5f7747145698c3d740"
   },
   "logo-firm-Regeneron.svg": {
    "updated": "2026-07-24",
    "source": "search:Regeneron Pharmaceuticals",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:a4048e829ad01b8fda7ef59e7c85bca924ed20c6"
   },
   "logo-firm-PepsiCo.svg": {
    "updated": "2026-07-24",
    "source": "search:PepsiCo",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:d0ad0b191d3e1e91c4feedc1873934172d26ebad"
   },
   "logo-firm-eBay.svg": {
    "updated": "2026-07-24",
    "source": "search:eBay",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:871a1a397cfb7ab15738303b2a119a6b495b5fd6"
   },
   "logo-firm-Novartis.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/novartis.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:a1372d225acf37e78a80e0b859aa6663e3cf791f99074833ecef75456636fdf4"
   },
   "logo-firm-AbbVie.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/abbvie.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:2fba8f9ddbd1022cbd727941a3d24d19a48510929d015c6bd0fe3c7b53c4d6e3"
   },
   "logo-firm-Biogen.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/biogen.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:a61fa082faf7c3be4be6aea5d677e451a9e34c5d082569019f56fad3134e386a"
   },
   "logo-firm-Genentech.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/genentech.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:4b1fda97b6222c518f5bb071f4aba72284647bccaeb4cb1f9a7d8d06945f0a6d"
   },
   "logo-firm-Agios.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/agios.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:7452351a1c0ee5cf3253df1aa40d4fde36adf99130dc6a6210eb18d176377973"
   },
   "logo-firm-Coherus.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/coherus.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:444f024be46c979543c53d7bd2f8f6d0b2621135680b4ba793728e8f619284ca"
   },
   "logo-firm-Axsome.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/axsome.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:1c941f0b13a7189ad24cb4c1011f5cefe340799cdfecb635dda14ecd16304f15"
   },
   "logo-firm-CHEST.svg": {
    "updated": "2026-07-24",
    "source": "url:https://4141848.fs1.hubspotusercontent-na1.net/hubfs/4141848/icons/chest.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:2f92b686c4bb61da8277a4aa6d84c02b52ecb0839f18afa3725b7fb9eb50dd34"
   },
   "logo-ai-Tellius-T_Purple.png": {
@@ -456,21 +456,21 @@
    "updated": "2026-08-19",
    "source": "commons:Collibra-Logo-RGB-FullColor.png",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:717ef43ed28f3b6ce8155d78324b4a2b36f6e8c1"
   },
   "logo-bi-Atlan.svg": {
    "updated": "2026-08-19",
    "source": "commons:Atlan-logo-full.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:cc9a19680670037745656b3015c0bd03bad087b3"
   },
   "logo-data-Numerator.svg": {
    "updated": "2026-08-19",
    "source": "commons:Numerator logo.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:6e5dde4ddb015fedac2b865049152e7bbd7d3cb3"
   },
   "logo-data-8451.svg": {
@@ -549,7 +549,7 @@
    "updated": "2026-08-19",
    "source": "url:https://www.komodohealth.com/wp-content/uploads/2026/04/Logo-Light.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha256:7a14216c961ad63a885761f046a9e1e9fb57783eae7eb80cd739a5ed833780f6"
   },
   "logo-bi-Veezoo.png": {
@@ -736,7 +736,7 @@
    "updated": "2026-08-23",
    "source": "commons:ZS Associates.svg",
    "status": "verified",
-   "verified": "2026-09-01",
+   "verified": "2026-09-15",
    "src_hash": "sha1:cf40883e837ea17777037e8fc661b1af22cf36e0"
   },
   "logo-firm-PMSA.png": {
@@ -756,6 +756,48 @@
    "source": "unknown",
    "status": "manual",
    "verified": "2026-08-27"
+  },
+  "logo-firm-Axtria.svg": {
+   "updated": "2026-09-01",
+   "source": "url:https://www.axtria.com/hubfs/logo.svg",
+   "status": "verified",
+   "verified": "2026-09-15",
+   "src_hash": "sha256:57361cb728bc2fd913015189533ffea1b3147060ba956ea9dcd50b7ae977061a"
+  },
+  "logo-firm-C5i.svg": {
+   "updated": "2026-09-01",
+   "source": "url:https://www.c5i.ai/wp-content/themes/course5iTheme/new-assets/images/c5i-primary-logo.svg",
+   "status": "verified",
+   "verified": "2026-09-15",
+   "src_hash": "sha256:388512f8e6b2733dfa5e9939f0380ac3102331eb466dd70df11054246b998e52"
+  },
+  "logo-data-FingertipFormulary.svg": {
+   "updated": "2026-09-02",
+   "source": "commons:Clarivate Analytics logo.svg",
+   "status": "verified",
+   "verified": "2026-09-15",
+   "src_hash": "sha1:cfe428aa1d518cc4e0f57f3b22c2c56ed94a7199"
+  },
+  "logo-bi-AisleAI.svg": {
+   "updated": "2026-09-10",
+   "source": "url:https://aisleai.com/wp-content/uploads/2025/09/logo-reverse.svg",
+   "status": "verified",
+   "verified": "2026-09-15",
+   "src_hash": "sha256:91834488b18faf6d66576a6a0e4b11a97f7b52b03ab03e84caaf4e823eb45df0"
+  },
+  "logo-data-ModelN.png": {
+   "updated": "2026-09-10",
+   "source": "url:https://www.modeln.com/wp-content/themes/modeln/img/modeln-logo.png",
+   "status": "verified",
+   "verified": "2026-09-15",
+   "src_hash": "sha256:287cdd8f323d7dd5d837eb11ef7536b4745ca73a0ae8d7d356fa7e862e9f033e"
+  },
+  "logo-data-HRSA.png": {
+   "updated": "2026-09-10",
+   "source": "commons:HRSA-Logo.png",
+   "status": "verified",
+   "verified": "2026-09-15",
+   "src_hash": "sha1:06565241ac703d6889a190c830edb7742c5358ca"
   },
   "icon-data-avro.png": {
    "updated": "2026-07-24",
@@ -1031,48 +1073,6 @@
    "updated": "2026-07-24",
    "source": "product",
    "status": "product"
-  },
-  "logo-firm-Axtria.svg": {
-   "updated": "2026-09-01",
-   "verified": "2026-09-01",
-   "status": "added",
-   "source": "url:https://www.axtria.com/hubfs/logo.svg",
-   "src_hash": "sha256:57361cb728bc2fd913015189533ffea1b3147060ba956ea9dcd50b7ae977061a"
-  },
-  "logo-firm-C5i.svg": {
-   "updated": "2026-09-01",
-   "verified": "2026-09-01",
-   "status": "added",
-   "source": "url:https://www.c5i.ai/wp-content/themes/course5iTheme/new-assets/images/c5i-primary-logo.svg",
-   "src_hash": "sha256:388512f8e6b2733dfa5e9939f0380ac3102331eb466dd70df11054246b998e52"
-  },
-  "logo-data-FingertipFormulary.svg": {
-   "updated": "2026-09-02",
-   "verified": "2026-09-02",
-   "status": "added",
-   "source": "commons:Clarivate Analytics logo.svg",
-   "src_hash": "sha1:cfe428aa1d518cc4e0f57f3b22c2c56ed94a7199"
-  },
-  "logo-bi-AisleAI.svg": {
-   "updated": "2026-09-10",
-   "verified": "2026-09-10",
-   "status": "added",
-   "source": "url:https://aisleai.com/wp-content/uploads/2025/09/logo-reverse.svg",
-   "src_hash": "sha256:91834488b18faf6d66576a6a0e4b11a97f7b52b03ab03e84caaf4e823eb45df0"
-  },
-  "logo-data-ModelN.png": {
-   "updated": "2026-09-10",
-   "verified": "2026-09-10",
-   "status": "added",
-   "source": "url:https://www.modeln.com/wp-content/themes/modeln/img/modeln-logo.png",
-   "src_hash": "sha256:287cdd8f323d7dd5d837eb11ef7536b4745ca73a0ae8d7d356fa7e862e9f033e"
-  },
-  "logo-data-HRSA.png": {
-   "updated": "2026-09-10",
-   "verified": "2026-09-10",
-   "status": "added",
-   "source": "commons:HRSA-Logo.png",
-   "src_hash": "sha1:06565241ac703d6889a190c830edb7742c5358ca"
   }
  }
 }
