@@ -1,6 +1,6 @@
 {
   "_comment": "Reference-only mirror of the two public fallback logo libraries, keyed under this repo's naming convention. NO image bytes are stored here \u2014 every entry's `url` resolves to an upstream jsDelivr file. Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions (multi-variant), gilbarbara fills gaps. Curated files in this repo always take precedence over a lib- mirror entry for the same brand. Regenerate with refresh_mirror.py. Variant resolution: theSVG swap /default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`.",
-  "generated": "2026-09-15",
+  "generated": "2026-10-01",
   "generated_from": {
     "thesvg": "https://data.jsdelivr.com/v1/packages/gh/glincker/thesvg@main",
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos.json"
@@ -10,10 +10,10 @@
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/{file}"
   },
   "counts": {
-    "total": 6383,
+    "total": 6388,
     "thesvg": 5651,
-    "gilbarbara_net_new": 732,
-    "gilbarbara_deduped": 707
+    "gilbarbara_net_new": 737,
+    "gilbarbara_deduped": 715
   },
   "mirror": [
     {
@@ -36244,6 +36244,15 @@
       ]
     },
     {
+      "name": "logo-lib-jina",
+      "source": "gilbarbara",
+      "slug": "jina",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/jina.svg",
+      "files": [
+        "jina.svg"
+      ]
+    },
+    {
       "name": "logo-lib-jina-ai",
       "source": "thesvg",
       "slug": "jina-ai",
@@ -41154,6 +41163,16 @@
       ]
     },
     {
+      "name": "logo-lib-mem0",
+      "source": "gilbarbara",
+      "slug": "mem0",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/mem0.svg",
+      "files": [
+        "mem0-icon.svg",
+        "mem0.svg"
+      ]
+    },
+    {
       "name": "logo-lib-memcached",
       "source": "gilbarbara",
       "slug": "memcached",
@@ -44707,6 +44726,17 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-octelium",
+      "source": "gilbarbara",
+      "slug": "octelium",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/octelium.svg",
+      "files": [
+        "octelium-icon-dark.svg",
+        "octelium-icon.svg",
+        "octelium.svg"
       ]
     },
     {
@@ -57423,6 +57453,16 @@
       ]
     },
     {
+      "name": "logo-lib-togetherai",
+      "source": "gilbarbara",
+      "slug": "togetherai",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/togetherai.svg",
+      "files": [
+        "togetherai-icon.svg",
+        "togetherai.svg"
+      ]
+    },
+    {
       "name": "logo-lib-togetherdotai",
       "source": "thesvg",
       "slug": "togetherdotai",
@@ -59412,6 +59452,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-vapi",
+      "source": "gilbarbara",
+      "slug": "vapi",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/vapi.svg",
+      "files": [
+        "vapi-icon.svg",
+        "vapi.svg"
       ]
     },
     {
