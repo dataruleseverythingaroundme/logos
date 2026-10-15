@@ -1,6 +1,6 @@
 {
   "_comment": "Reference-only mirror of the two public fallback logo libraries, keyed under this repo's naming convention. NO image bytes are stored here \u2014 every entry's `url` resolves to an upstream jsDelivr file. Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions (multi-variant), gilbarbara fills gaps. Curated files in this repo always take precedence over a lib- mirror entry for the same brand. Regenerate with refresh_mirror.py. Variant resolution: theSVG swap /default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`.",
-  "generated": "2026-10-01",
+  "generated": "2026-10-15",
   "generated_from": {
     "thesvg": "https://data.jsdelivr.com/v1/packages/gh/glincker/thesvg@main",
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos.json"
@@ -10,10 +10,10 @@
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/{file}"
   },
   "counts": {
-    "total": 6388,
+    "total": 6396,
     "thesvg": 5651,
-    "gilbarbara_net_new": 737,
-    "gilbarbara_deduped": 715
+    "gilbarbara_net_new": 745,
+    "gilbarbara_deduped": 722
   },
   "mirror": [
     {
@@ -19483,6 +19483,16 @@
       ]
     },
     {
+      "name": "logo-lib-browserbase",
+      "source": "gilbarbara",
+      "slug": "browserbase",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/browserbase.svg",
+      "files": [
+        "browserbase-icon.svg",
+        "browserbase.svg"
+      ]
+    },
+    {
       "name": "logo-lib-browserify",
       "source": "gilbarbara",
       "slug": "browserify",
@@ -22743,6 +22753,16 @@
       ]
     },
     {
+      "name": "logo-lib-coreweave",
+      "source": "gilbarbara",
+      "slug": "coreweave",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/coreweave.svg",
+      "files": [
+        "coreweave-icon.svg",
+        "coreweave.svg"
+      ]
+    },
+    {
       "name": "logo-lib-corona-engine",
       "source": "thesvg",
       "slug": "corona-engine",
@@ -25205,6 +25225,15 @@
       "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/drip.svg",
       "files": [
         "drip.svg"
+      ]
+    },
+    {
+      "name": "logo-lib-driverjs",
+      "source": "gilbarbara",
+      "slug": "driverjs",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/driverjs.svg",
+      "files": [
+        "driverjs.svg"
       ]
     },
     {
@@ -32614,6 +32643,15 @@
       "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/grails.svg",
       "files": [
         "grails.svg"
+      ]
+    },
+    {
+      "name": "logo-lib-grain-lang",
+      "source": "gilbarbara",
+      "slug": "grain-lang",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/grain-lang.svg",
+      "files": [
+        "grain-lang.svg"
       ]
     },
     {
@@ -47617,6 +47655,15 @@
       ]
     },
     {
+      "name": "logo-lib-plantuml",
+      "source": "gilbarbara",
+      "slug": "plantuml",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/plantuml.svg",
+      "files": [
+        "plantuml.svg"
+      ]
+    },
+    {
       "name": "logo-lib-plasmic",
       "source": "gilbarbara",
       "slug": "plasmic",
@@ -50379,6 +50426,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-red-lang",
+      "source": "gilbarbara",
+      "slug": "red-lang",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/red-lang.svg",
+      "files": [
+        "red-lang.svg"
       ]
     },
     {
@@ -60616,6 +60672,16 @@
       ]
     },
     {
+      "name": "logo-lib-wandb",
+      "source": "gilbarbara",
+      "slug": "wandb",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/wandb.svg",
+      "files": [
+        "wandb-icon.svg",
+        "wandb.svg"
+      ]
+    },
+    {
       "name": "logo-lib-wantedly",
       "source": "thesvg",
       "slug": "wantedly",
@@ -60781,6 +60847,17 @@
       "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/weave.svg",
       "files": [
         "weave.svg"
+      ]
+    },
+    {
+      "name": "logo-lib-weaviate",
+      "source": "gilbarbara",
+      "slug": "weaviate",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/weaviate.svg",
+      "files": [
+        "weaviate-icon-alt.svg",
+        "weaviate-icon.svg",
+        "weaviate.svg"
       ]
     },
     {
