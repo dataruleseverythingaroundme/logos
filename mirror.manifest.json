@@ -1,6 +1,6 @@
 {
   "_comment": "Reference-only mirror of the two public fallback logo libraries, keyed under this repo's naming convention. NO image bytes are stored here \u2014 every entry's `url` resolves to an upstream jsDelivr file. Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions (multi-variant), gilbarbara fills gaps. Curated files in this repo always take precedence over a lib- mirror entry for the same brand. Regenerate with refresh_mirror.py. Variant resolution: theSVG swap /default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`.",
-  "generated": "2026-10-15",
+  "generated": "2026-11-01",
   "generated_from": {
     "thesvg": "https://data.jsdelivr.com/v1/packages/gh/glincker/thesvg@main",
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos.json"
@@ -10,10 +10,10 @@
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/{file}"
   },
   "counts": {
-    "total": 6396,
+    "total": 6414,
     "thesvg": 5651,
-    "gilbarbara_net_new": 745,
-    "gilbarbara_deduped": 722
+    "gilbarbara_net_new": 763,
+    "gilbarbara_deduped": 736
   },
   "mirror": [
     {
@@ -2493,6 +2493,15 @@
       ]
     },
     {
+      "name": "logo-lib-apache-sedona",
+      "source": "gilbarbara",
+      "slug": "apache-sedona",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apache-sedona.svg",
+      "files": [
+        "apache-sedona.svg"
+      ]
+    },
+    {
       "name": "logo-lib-apache-software-foundation",
       "source": "gilbarbara",
       "slug": "apache-software-foundation",
@@ -2588,6 +2597,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-apify",
+      "source": "gilbarbara",
+      "slug": "apify",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apify.svg",
+      "files": [
+        "apify-icon.svg",
+        "apify.svg"
       ]
     },
     {
@@ -22365,6 +22384,16 @@
       ]
     },
     {
+      "name": "logo-lib-composio",
+      "source": "gilbarbara",
+      "slug": "composio",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/composio.svg",
+      "files": [
+        "composio-icon.svg",
+        "composio.svg"
+      ]
+    },
+    {
       "name": "logo-lib-comptia",
       "source": "thesvg",
       "slug": "comptia",
@@ -26933,6 +26962,16 @@
       ]
     },
     {
+      "name": "logo-lib-falkordb",
+      "source": "gilbarbara",
+      "slug": "falkordb",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/falkordb.svg",
+      "files": [
+        "falkordb-icon.svg",
+        "falkordb.svg"
+      ]
+    },
+    {
       "name": "logo-lib-fampay",
       "source": "thesvg",
       "slug": "fampay",
@@ -27517,6 +27556,15 @@
         "color",
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-fireworks-ai",
+      "source": "gilbarbara",
+      "slug": "fireworks-ai",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/fireworks-ai.svg",
+      "files": [
+        "fireworks-ai.svg"
       ]
     },
     {
@@ -32607,6 +32655,15 @@
       ]
     },
     {
+      "name": "logo-lib-gradium",
+      "source": "gilbarbara",
+      "slug": "gradium",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/gradium.svg",
+      "files": [
+        "gradium.svg"
+      ]
+    },
+    {
       "name": "logo-lib-gradle",
       "source": "thesvg",
       "slug": "gradle",
@@ -34510,6 +34567,16 @@
       ]
     },
     {
+      "name": "logo-lib-hume",
+      "source": "gilbarbara",
+      "slug": "hume",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/hume.svg",
+      "files": [
+        "hume-icon.svg",
+        "hume.svg"
+      ]
+    },
+    {
       "name": "logo-lib-hume-ai",
       "source": "thesvg",
       "slug": "hume-ai",
@@ -35140,6 +35207,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-inceptionlabs",
+      "source": "gilbarbara",
+      "slug": "inceptionlabs",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/inceptionlabs.svg",
+      "files": [
+        "inceptionlabs-icon.svg",
+        "inceptionlabs.svg"
       ]
     },
     {
@@ -36038,6 +36115,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-jax",
+      "source": "gilbarbara",
+      "slug": "jax",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/jax.svg",
+      "files": [
+        "jax.svg"
       ]
     },
     {
@@ -38372,6 +38458,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-lancedb",
+      "source": "gilbarbara",
+      "slug": "lancedb",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/lancedb.svg",
+      "files": [
+        "lancedb-icon.svg",
+        "lancedb.svg"
       ]
     },
     {
@@ -49880,6 +49976,15 @@
       ]
     },
     {
+      "name": "logo-lib-ragflow",
+      "source": "gilbarbara",
+      "slug": "ragflow",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/ragflow.svg",
+      "files": [
+        "ragflow.svg"
+      ]
+    },
+    {
       "name": "logo-lib-rails",
       "source": "gilbarbara",
       "slug": "rails",
@@ -50948,6 +51053,16 @@
       ]
     },
     {
+      "name": "logo-lib-retell",
+      "source": "gilbarbara",
+      "slug": "retell",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/retell.svg",
+      "files": [
+        "retell-icon.svg",
+        "retell.svg"
+      ]
+    },
+    {
       "name": "logo-lib-rethinkdb",
       "source": "gilbarbara",
       "slug": "rethinkdb",
@@ -51738,6 +51853,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-rudderstack",
+      "source": "gilbarbara",
+      "slug": "rudderstack",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/rudderstack.svg",
+      "files": [
+        "rudderstack-icon.svg",
+        "rudderstack.svg"
       ]
     },
     {
@@ -54400,6 +54525,16 @@
       ]
     },
     {
+      "name": "logo-lib-speechmatics",
+      "source": "gilbarbara",
+      "slug": "speechmatics",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/speechmatics.svg",
+      "files": [
+        "speechmatics-icon.svg",
+        "speechmatics.svg"
+      ]
+    },
+    {
       "name": "logo-lib-speedcurve",
       "source": "gilbarbara",
       "slug": "speedcurve",
@@ -56616,6 +56751,15 @@
       ]
     },
     {
+      "name": "logo-lib-telnyx",
+      "source": "gilbarbara",
+      "slug": "telnyx",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/telnyx.svg",
+      "files": [
+        "telnyx.svg"
+      ]
+    },
+    {
       "name": "logo-lib-tembo",
       "source": "thesvg",
       "slug": "tembo",
@@ -57321,6 +57465,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-tigergraph",
+      "source": "gilbarbara",
+      "slug": "tigergraph",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/tigergraph.svg",
+      "files": [
+        "tigergraph-icon.svg",
+        "tigergraph.svg"
       ]
     },
     {
@@ -60103,6 +60257,18 @@
       ]
     },
     {
+      "name": "logo-lib-viteplus",
+      "source": "gilbarbara",
+      "slug": "viteplus",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/viteplus.svg",
+      "files": [
+        "viteplus-dark.svg",
+        "viteplus-icon-dark.svg",
+        "viteplus-icon.svg",
+        "viteplus.svg"
+      ]
+    },
+    {
       "name": "logo-lib-vitepress",
       "source": "thesvg",
       "slug": "vitepress",
@@ -62698,6 +62864,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-z-ai",
+      "source": "gilbarbara",
+      "slug": "z-ai",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/z-ai.svg",
+      "files": [
+        "z-ai.svg"
       ]
     },
     {
