@@ -1,6 +1,6 @@
 {
   "_comment": "Reference-only mirror of the two public fallback logo libraries, keyed under this repo's naming convention. NO image bytes are stored here \u2014 every entry's `url` resolves to an upstream jsDelivr file. Convention: logo-lib-<upstream-slug>. theSVG wins on slug collisions (multi-variant), gilbarbara fills gaps. Curated files in this repo always take precedence over a lib- mirror entry for the same brand. Regenerate with refresh_mirror.py. Variant resolution: theSVG swap /default.svg -> /<variant>.svg; gilbarbara pick the matching name from `files`.",
-  "generated": "2026-11-01",
+  "generated": "2026-11-15",
   "generated_from": {
     "thesvg": "https://data.jsdelivr.com/v1/packages/gh/glincker/thesvg@main",
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos.json"
@@ -10,10 +10,10 @@
     "gilbarbara": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/{file}"
   },
   "counts": {
-    "total": 6414,
+    "total": 6425,
     "thesvg": 5651,
-    "gilbarbara_net_new": 763,
-    "gilbarbara_deduped": 736
+    "gilbarbara_net_new": 774,
+    "gilbarbara_deduped": 739
   },
   "mirror": [
     {
@@ -25368,6 +25368,15 @@
       ]
     },
     {
+      "name": "logo-lib-dspy",
+      "source": "gilbarbara",
+      "slug": "dspy",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/dspy.svg",
+      "files": [
+        "dspy.svg"
+      ]
+    },
+    {
       "name": "logo-lib-dts",
       "source": "thesvg",
       "slug": "dts",
@@ -33885,6 +33894,15 @@
       ]
     },
     {
+      "name": "logo-lib-hermes-agent",
+      "source": "gilbarbara",
+      "slug": "hermes-agent",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/hermes-agent.svg",
+      "files": [
+        "hermes-agent.svg"
+      ]
+    },
+    {
       "name": "logo-lib-heroic-games-launcher",
       "source": "thesvg",
       "slug": "heroic-games-launcher",
@@ -34001,6 +34019,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-higgsfield",
+      "source": "gilbarbara",
+      "slug": "higgsfield",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/higgsfield.svg",
+      "files": [
+        "higgsfield-icon.svg",
+        "higgsfield.svg"
       ]
     },
     {
@@ -39654,6 +39682,16 @@
       ]
     },
     {
+      "name": "logo-lib-llama-index",
+      "source": "gilbarbara",
+      "slug": "llama-index",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/llama-index.svg",
+      "files": [
+        "llama-index-icon.svg",
+        "llama-index.svg"
+      ]
+    },
+    {
       "name": "logo-lib-llamaindex",
       "source": "thesvg",
       "slug": "llamaindex",
@@ -41455,6 +41493,24 @@
         "default",
         "mono",
         "mono-lobe"
+      ]
+    },
+    {
+      "name": "logo-lib-meta-ai",
+      "source": "gilbarbara",
+      "slug": "meta-ai",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/meta-ai.svg",
+      "files": [
+        "meta-ai.svg"
+      ]
+    },
+    {
+      "name": "logo-lib-meta-muse",
+      "source": "gilbarbara",
+      "slug": "meta-muse",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/meta-muse.svg",
+      "files": [
+        "meta-muse.svg"
       ]
     },
     {
@@ -44303,6 +44359,16 @@
       ]
     },
     {
+      "name": "logo-lib-notebook-lm",
+      "source": "gilbarbara",
+      "slug": "notebook-lm",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/notebook-lm.svg",
+      "files": [
+        "notebook-lm-mono.svg",
+        "notebook-lm.svg"
+      ]
+    },
+    {
       "name": "logo-lib-notebooklm",
       "source": "thesvg",
       "slug": "notebooklm",
@@ -45353,6 +45419,16 @@
       ]
     },
     {
+      "name": "logo-lib-openclaw",
+      "source": "gilbarbara",
+      "slug": "openclaw",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/openclaw.svg",
+      "files": [
+        "openclaw-icon.svg",
+        "openclaw.svg"
+      ]
+    },
+    {
       "name": "logo-lib-openclaw-moltbot-clawdbot",
       "source": "thesvg",
       "slug": "openclaw-moltbot-clawdbot",
@@ -46059,6 +46135,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-otter-ai",
+      "source": "gilbarbara",
+      "slug": "otter-ai",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/otter-ai.svg",
+      "files": [
+        "otter-ai.svg"
       ]
     },
     {
@@ -47265,6 +47350,15 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-pi-code",
+      "source": "gilbarbara",
+      "slug": "pi-code",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/pi-code.svg",
+      "files": [
+        "pi-code.svg"
       ]
     },
     {
@@ -52410,6 +52504,16 @@
       "variants": [
         "default",
         "mono"
+      ]
+    },
+    {
+      "name": "logo-lib-scale-ai",
+      "source": "gilbarbara",
+      "slug": "scale-ai",
+      "url": "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/scale-ai.svg",
+      "files": [
+        "scale-ai-icon.svg",
+        "scale-ai.svg"
       ]
     },
     {
